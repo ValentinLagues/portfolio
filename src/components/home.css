@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'SOR';
+    src: local('SOR'), url('../font/SOR2.ttf');
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+      text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px rgb(230, 18, 124),
+        0 0 600px rgb(230, 18, 124),
+        0 0 80px rgb(230, 18, 124),
+        0 0 90px rgb(230, 18, 124),
+        0 0 100px rgb(230, 18, 124);
+      }
+    20%, 24%, 55% {        
+      text-shadow: none;
+      }    
+    }
+
+  @keyframes neon {
+    0%{
+      text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 42px rgb(230, 18, 124),
+        0 0 77px rgb(230, 18, 124),
+        0 0 100px rgb(230, 18, 124);
+    }
+    50% {
+      text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 32px rgb(230, 18, 124),
+        0 0 87px rgb(230, 18, 124),
+        0 0 120px rgb(230, 18, 124);
+    }
+    }
+
+    @keyframes neon2 {
+      0%{
+        text-shadow:
+          0 0 7px #fff,
+          0 0 10px #fff,
+          0 0 42px rgb(18, 188, 230),
+          0 0 77px rgb(18, 188, 230),
+          0 0 100px rgb(18, 188, 230);
+      }
+      50% {
+        text-shadow:
+          0 0 7px #fff,
+          0 0 10px #fff,
+          0 0 32px rgb(18, 188, 230),
+          0 0 87px rgb(18, 188, 230),
+          0 0 120px rgb(18, 188, 230);
+      }
+      }
+
+#home {
+  z-index: 0;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: SOR;
+    animation-name: fadeIn;
+    animation-duration: 5s;
+    transition-timing-function: linear;
+    animation-fill-mode: forwards;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+.home-title {
+  color:white;
+    font-family: SOR;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    }
+
+.home-name {
+  margin-top: 15px;
+  margin-bottom: 15px;
+    font-size: 8vw;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 42px rgb(230, 18, 124),
+      0 0 77px rgb(230, 18, 124),
+      0 0 100px rgb(230, 18, 124);
+    animation: neon 0.5s infinite linear;
+}
+
+.home-developper {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 5vw;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 42px rgb(230, 18, 124),
+      0 0 77px rgb(230, 18, 124),
+      0 0 100px rgb(230, 18, 124);
+    animation: flicker 4s infinite alternate;     
+}
+
+.home-start {
+  color: white;
+  text-decoration: none;
+    cursor: pointer;
+    margin-top: 45px;
+    font-size: 3.5vw;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 42px rgb(230, 18, 124),
+      0 0 77px rgb(230, 18, 124),
+      0 0 100px rgb(230, 18, 124);
+    animation: neon 0.3s infinite linear;
+}
+
+.home-close {
+  color: white;
+  text-decoration: none;
+    cursor: pointer;
+    margin-top: 45px;
+    font-size: 3.5vw;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 42px rgb(18, 188, 230),
+    0 0 77px rgb(18, 188, 230),
+    0 0 100px rgb(18, 188, 230);
+  animation: neon2 0.3s infinite linear;
+}

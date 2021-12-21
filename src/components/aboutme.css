@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'SOR';
+    src: local('SOR'), url('../font/SOR2.ttf');
+  }
+
+  @font-face {
+    font-family: 'SOR2';
+    src: local('SOR'), url('../font/SOR2-2.ttf');
+  }
+
+  @keyframes neon {
+    0%{
+      text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 42px rgb(230, 18, 124),
+        0 0 77px rgb(230, 18, 124),
+        0 0 100px rgb(230, 18, 124);
+    }
+    50% {
+      text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 32px rgb(230, 18, 124),
+        0 0 87px rgb(230, 18, 124),
+        0 0 120px rgb(230, 18, 124);
+    }
+    } 
+
+ #aboutme {
+  height:100vh;
+  padding-top: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-title {
+  font-family: SOR;
+  width: 100%;
+  color: white;
+  margin-top: 5vh;
+    font-size: 5vw;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 42px rgb(230, 18, 124),
+      0 0 77px rgb(230, 18, 124),
+      0 0 100px rgb(230, 18, 124);
+    animation: neon 0.3s infinite linear;
+}
+
+.about-container {
+  margin-top: 1em;
+  padding: 1.5em;
+  width: 75vw;
+    background-color: black;
+    border-style: solid;
+    color:white;
+    border-width: 5px 2px;
+    justify-content: center;
+    align-content: center;
+    opacity:0.95;
+}
+
+.about-img {
+  justify-content: center;
+  width: 35vw;
+  height: 35vh;
+  margin-bottom: 1em;
+}
+
+.about-paragraph {
+  text-align: justify;
+    text-justify:auto;
+    font-family: SOR2;
+    color: white;
+font-size: 1vw;
+line-height: 3vh;
+} 
+
+.about-link {
+  cursor: pointer;
+  color:blue;
+}

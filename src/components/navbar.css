@@ -1,0 +1,130 @@
+  @font-face {
+    font-family: 'SOR';
+    src: local('SOR'), url('../font/SOR2.ttf');
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translate(0, -50vw);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+  @keyframes FadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes flicker-bar {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+      text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px rgb(230, 18, 124),
+        0 0 600px rgb(230, 18, 124),
+        0 0 80px rgb(230, 18, 124),
+        0 0 90px rgb(230, 18, 124),
+        0 0 100px rgb(230, 18, 124);
+      }
+    20%, 24%, 55% {        
+      text-shadow: none;
+      }    
+    }
+
+  @keyframes Neon {
+    0%{
+      text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 42px rgb(230, 18, 124),
+        0 0 77px rgb(230, 18, 124),
+        0 0 100px rgb(230, 18, 124);
+    }
+    50% {
+      text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 32px rgb(230, 18, 124),
+        0 0 87px rgb(230, 18, 124),
+        0 0 120px rgb(230, 18, 124);
+    }
+    }
+
+.navbar {
+  list-style: none;
+  z-index: 1000;
+  height: 10vh;
+    font-family: SOR;
+    color: white;
+    font-size: 4vw;
+    animation-name: FadeIn;
+    animation-duration: 5s;
+    transition-timing-function: linear;
+    animation-fill-mode: forwards;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+}
+
+.navbar-scroll {
+  list-style: none;
+  z-index: 1;
+  height: 10vh;
+    font-family: SOR;
+    color: white;
+    font-size: 4vw;
+    background-color: black;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+}
+
+.neon {
+  cursor: pointer;
+    text-decoration: none;
+    color: white;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 42px rgb(230, 18, 124),
+      0 0 77px rgb(230, 18, 124),
+      0 0 100px rgb(230, 18, 124);
+      animation: Neon 0.5s infinite linear;
+}
+
+.flicker {
+  cursor: pointer;
+  text-decoration: none;
+    color: white;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 42px rgb(230, 18, 124),
+      0 0 77px rgb(230, 18, 124),
+      0 0 100px rgb(230, 18, 124);
+      animation: flicker-bar 5s infinite alternate;
+}
+
+.flicker2 {
+  cursor:pointer;
+  text-decoration: none;
+    color: white;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 42px rgb(230, 18, 124),
+      0 0 77px rgb(230, 18, 124),
+      0 0 100px rgb(230, 18, 124);
+      animation: flicker 3s infinite alternate;
+}

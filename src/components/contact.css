@@ -1,0 +1,159 @@
+@font-face {
+  font-family: 'SOR';
+  src: local('SOR'), url('../font/SOR2.ttf');
+}
+
+@font-face {
+  font-family: 'SOR2';
+  src: local('SOR'), url('../font/SOR2-2.ttf');
+}
+
+@keyframes neon {
+  0%{
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 42px rgb(230, 18, 124),
+      0 0 77px rgb(230, 18, 124),
+      0 0 100px rgb(230, 18, 124);
+  }
+  50% {
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 32px rgb(230, 18, 124),
+      0 0 87px rgb(230, 18, 124),
+      0 0 120px rgb(230, 18, 124);
+  }
+  }
+
+  @keyframes flash {
+    0%   { opacity:1; }
+    30%   {opacity:0; }
+    100% { opacity:1; }
+  }
+
+#contact {
+height:93.5vh;
+padding-top: 3%;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.contact-title {
+  font-family: SOR;
+  color: white;
+  width: 100%;
+    margin-top: 5vh;
+    font-size: 5vw;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 42px rgb(230, 18, 124),
+      0 0 77px rgb(230, 18, 124),
+      0 0 100px rgb(230, 18, 124);
+    animation: neon 0.3s infinite linear;
+}
+
+.contact-container {
+border-style:solid;
+border-width: 5px 2px;
+color: white; 
+margin-top: 1em;
+padding: 1.5em;
+  width: 75vw;
+  background-color: black;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: justify;
+  text-justify:auto;
+  opacity:0.95;
+} 
+
+.contact-contract {
+  justify-content: center;
+  text-align: center;
+line-height: 3.5vh;
+  font-family: SOR2;
+  color: goldenrod;
+  font-size: 1.3vw;
+  margin-bottom: 15px;
+}
+
+.contact-paragraph {
+  justify-content: center;
+  text-align: center;
+line-height: 2.8vh;
+  font-family: SOR2;
+  color: white;
+  font-size: 1vw;
+}
+
+.contact-img-sonic {
+  width: 4em;
+  height: 4em;
+  margin-bottom: 2vh;
+}
+
+.contact-logos-list {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+}
+
+.contact-logos {
+  height: 3em;
+  width: 3em;
+  padding: 1em;
+}
+
+.contact-download {
+  margin-top: 10px;
+  font-family: SOR2;
+  color: white;
+  font-size: 1vw;
+  animation-duration: 1s;
+  animation-name: flash;
+  animation-iteration-count: infinite;
+  transition: none;
+}
+
+.contact-thankyou {
+  margin-top: 10px;
+    font-family: SOR2;
+    color: white;
+    font-size: 1vw;
+    text-align: center;
+}
+
+.contact-img-jack {
+  width: 16em;
+  height: 8em;
+}
+
+.contact-hypercan {
+  margin-top: 30px;
+  line-height: 1.5vh;
+    font-family: SOR2;
+    color: white;
+    font-size: 0.6vw;
+    text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: darkgoldenrod;
+}
+
+.contact-copyright {
+  margin-top: 25px;
+  line-height: 1.5vh;
+    font-family: SOR2;
+    color: white;
+    font-size: 0.4vw;
+    text-align: center;
+}

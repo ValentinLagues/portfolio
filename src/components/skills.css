@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'SOR';
+    src: local('SOR'), url('../font/SOR2.ttf');
+  }
+
+  @font-face {
+    font-family: 'SOR2';
+    src: local('SOR'), url('../font/SOR2-2.ttf');
+  }
+
+  @keyframes neon {
+    0%{
+      text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 42px rgb(230, 18, 124),
+        0 0 77px rgb(230, 18, 124),
+        0 0 100px rgb(230, 18, 124);
+    }
+    50% {
+      text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 32px rgb(230, 18, 124),
+        0 0 87px rgb(230, 18, 124),
+        0 0 120px rgb(230, 18, 124);
+    }
+    }
+
+    @keyframes flash {
+      0%   { opacity:1; }
+      30%   {opacity:0; }
+      100% { opacity:1; }
+    }
+
+#skills {
+  height:100vh;
+  padding-top: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills-title {
+    font-family: SOR;
+    color: white;
+    width: 100%;
+      margin-top: 5vh;
+      font-size: 5vw;
+      text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 42px rgb(230, 18, 124),
+        0 0 77px rgb(230, 18, 124),
+        0 0 100px rgb(230, 18, 124);
+      animation: neon 0.3s infinite linear;
+}
+
+.skills-container {
+  border-style:solid;
+  border-width: 5px 2px;
+  color: white; 
+  margin-top: 1em;
+  padding: 1.5em;
+    width: 75vw;
+    background-color: black;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: justify;
+    text-justify:auto;
+    opacity:0.95;
+} 
+
+.skills-portrait{
+  width: 12em;
+  height:12em;
+  border-style: solid;
+  border-width: 5px 2px;
+  color: white;
+  cursor: pointer;
+}
+
+.skills-selected-portrait{
+  width: 12em;
+  height:12em;
+  border-style: solid;
+  border-width: 5px 2px;
+  color: goldenrod;
+  cursor: pointer;
+}
+
+.skills-player {
+  margin-top: 15px;
+  font-family: SOR2;
+  color: white;
+  font-size: 1.5vw;
+  animation-duration: 1s;
+  animation-name: flash;
+  animation-iteration-count: infinite;
+  transition: none;
+}
+
+.skills-name {
+  margin-top: 15px;
+    font-family: SOR2;
+    color: white;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+.skills-fullstack {
+  margin-top: 10px;
+  font-family: SOR2;
+  color: white;
+  font-size: 1vw;
+  text-align: center;
+}
+
+.skills-card {
+  padding-top: 10px;
+  width: 60vw;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills-computer {
+  width:190px;
+  height:220px;
+}
+
+.skills-coins {
+  margin-left: 4em;
+  list-style: none;
+  text-align: right;
+}
+
+.skills-paragraph {
+  margin-left: 1.5em;
+  line-height: 2.8vh;
+  list-style: none;
+    font-family: SOR2;
+    color: white;
+    font-size: 1vw;
+}
+
+.coin{
+  width: 18px;
+  height:18px;
+}

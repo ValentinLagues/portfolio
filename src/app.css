@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.App {
+    margin: 0;
+    padding: 0;
+    background-image: url("../src/assets/city.gif");
+    background-size: 100vw 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    text-align: center;
+    height: 100%;
+  }
+  
