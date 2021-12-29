@@ -3,6 +3,11 @@
     src: local('SOR'), url('../font/SOR2.ttf');
   }
 
+@font-face {
+  font-family: 'SOR2';
+  src: local ('SOR2'), url('../font/SOR2-2.ttf');
+}
+
   @keyframes fadeIn {
     0% {
       opacity: 0;
@@ -19,7 +24,7 @@
         0 0 11px #fff,
         0 0 19px #fff,
         0 0 40px rgb(230, 18, 124),
-        0 0 600px rgb(230, 18, 124),
+        0 0 60px rgb(230, 18, 124),
         0 0 80px rgb(230, 18, 124),
         0 0 90px rgb(230, 18, 124),
         0 0 100px rgb(230, 18, 124);
@@ -28,6 +33,23 @@
       text-shadow: none;
       }    
     }
+
+    @keyframes flickerblue {
+      0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow:
+          0 0 4px #fff,
+          0 0 11px #fff,
+          0 0 19px #fff,
+          0 0 40px rgb(18, 188, 230),
+          0 0 600px rgb(18, 188, 230),
+          0 0 80px rgb(18, 188, 230),
+          0 0 90px rgb(18, 188, 230),
+          0 0 100px rgb(18, 188, 230);
+        }
+      20%, 24%, 55% {        
+        text-shadow: none;
+        }    
+      }
 
   @keyframes neon {
     0%{
@@ -48,7 +70,7 @@
     }
     }
 
-    @keyframes neon2 {
+    @keyframes neonblue {
       0%{
         text-shadow:
           0 0 7px #fff,
@@ -76,6 +98,7 @@
     animation-duration: 5s;
     transition-timing-function: linear;
     animation-fill-mode: forwards;
+    width: 99vw;
     height: 100vh;
     align-items: center;
     justify-content: center;
@@ -103,7 +126,20 @@
     animation: neon 0.5s infinite linear;
 }
 
-.home-developper {
+.home-name-blue {
+  margin-top: 15px;
+  margin-bottom: 15px;
+    font-size: 8vw;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 42px rgb(18, 188, 230),
+      0 0 77px rgb(18, 188, 230),
+      0 0 100px rgb(18, 188, 230);
+    animation: neonblue 0.5s infinite linear;
+}
+
+.home-developer {
     margin-top: 15px;
     margin-bottom: 15px;
     font-size: 5vw;
@@ -116,32 +152,120 @@
     animation: flicker 4s infinite alternate;     
 }
 
-.home-start {
-  color: white;
-  text-decoration: none;
-    cursor: pointer;
-    margin-top: 45px;
-    font-size: 3.5vw;
-    text-shadow:
-      0 0 7px #fff,
-      0 0 10px #fff,
-      0 0 42px rgb(230, 18, 124),
-      0 0 77px rgb(230, 18, 124),
-      0 0 100px rgb(230, 18, 124);
-    animation: neon 0.3s infinite linear;
-}
-
-.home-close {
-  color: white;
-  text-decoration: none;
-    cursor: pointer;
-    margin-top: 45px;
-    font-size: 3.5vw;
-    text-shadow:
+.home-developer-blue {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 5vw;
+  text-shadow:
     0 0 7px #fff,
     0 0 10px #fff,
     0 0 42px rgb(18, 188, 230),
     0 0 77px rgb(18, 188, 230),
     0 0 100px rgb(18, 188, 230);
-  animation: neon2 0.3s infinite linear;
+  animation: flickerblue 4s infinite alternate;     
+}
+
+.press-start {
+  cursor: pointer;
+  margin-top: 2em;
+  font-family: SOR2;
+  color: white;
+  font-size: 1.5vw;
+  animation-duration: 1s;
+  animation-name: flash;
+  animation-iteration-count: infinite;
+  transition: none;
+}
+
+.start-selected{
+  padding-bottom: 1.5em;
+  font-family: SOR2;
+  color: white;
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+.settings{
+  margin-top: 3em;
+}
+
+.settings-container {
+  list-style: none;
+  border-style:solid;
+  border-width: 5px 2px;
+  color: white;
+  padding: 1em;
+    width: 75vw;
+    background-color: black;
+    align-content: center;
+    align-items: center;
+    text-align: justify;
+    text-justify:auto;
+    opacity:0.95;
+  } 
+
+.settings-list{
+  display: flex;
+  justify-content: space-around;
+}
+
+.settings-card{
+  text-align: center;
+  width: 99vw;
+}
+
+.settings-music{
+  font-family: SOR2;
+  list-style: none;
+  line-height: 4vh;
+  text-align: center;
+}
+
+.settings-language{
+  font-family: SOR2;
+  list-style: none;
+  line-height: 4vh;
+  text-align: center;
+}
+
+.settings-select{
+  padding-bottom: 1em;
+  font-family: SOR2;
+  font-size:1vw;
+}
+
+.settings-choice{
+  font-family: SOR2;
+  cursor: pointer;
+  font-size: 0.7vw;
+}
+
+.settings-blue{
+  font-family: SOR2;
+  color:rgb(18, 188, 230);
+  cursor: pointer;
+  font-size: 0.7vw;
+}
+
+.settings-pink{
+  font-family: SOR2;
+  color:rgb(230, 18, 124);
+  cursor: pointer;
+  font-size: 0.7vw;
+}
+
+.music-on{
+  font-family: SOR2;
+  color: goldenrod;
+  cursor: pointer;
+  font-size: 0.7vw;
+}
+
+.settings-save{
+  cursor: pointer;
+  margin-top: 1em;
+  font-family: SOR2;
+  color: white;
+  font-size: 1.5vw;
+  text-align: center;
 }

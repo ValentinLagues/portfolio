@@ -1,11 +1,8 @@
 import { useState, useEffect } from "react";
-import ReactPlayer from "react-player";
 import { Link } from "react-scroll";
 import "./navbar.css";
-import sounds from "../sound";
 
-const NavBar = () => {
-  const [sound, setSound] = useState(false);
+const NavBar = ({ french, select, blue }) => {
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -15,133 +12,49 @@ const NavBar = () => {
   return (
     <ul className={scroll ? "navbar-scroll" : "navbar"}>
       <li>
-        <Link className="neon" to="home" onClick={() => setSound(!sound)}>
-          HOME
+        <Link
+          className={blue ? "neonblue" : "neon"}
+          to="home"
+          onClick={() => select()}
+        >
+          {french ? "ACCUEIL" : "HOME"}
         </Link>
-        {sound && (
-          <ReactPlayer
-            url={sounds[0].src}
-            controls
-            width="0"
-            height="0"
-            playing={true}
-            volume={0.3}
-          />
-        )}
-        {!sound && (
-          <ReactPlayer
-            url={sounds[0].src}
-            controls
-            width="0"
-            height="0"
-            playing={true}
-            volume={0.3}
-          />
-        )}
-      </li>
-      <li>
-        <Link className="flicker" to="aboutme" onClick={() => setSound(!sound)}>
-          ABOUT ME
-        </Link>
-        {sound && (
-          <ReactPlayer
-            url={sounds[0].src}
-            controls
-            width="0"
-            height="0"
-            playing={true}
-            volume={0.3}
-          />
-        )}
-        {!sound && (
-          <ReactPlayer
-            url={sounds[0].src}
-            controls
-            width="0"
-            height="0"
-            playing={true}
-            volume={0.3}
-          />
-        )}
-      </li>
-      <li>
-        <Link className="neon" to="skills" onClick={() => setSound(!sound)}>
-          SKILLS
-        </Link>
-        {sound && (
-          <ReactPlayer
-            url={sounds[0].src}
-            controls
-            width="0"
-            height="0"
-            playing={true}
-            volume={0.3}
-          />
-        )}
-        {!sound && (
-          <ReactPlayer
-            url={sounds[0].src}
-            controls
-            width="0"
-            height="0"
-            playing={true}
-            volume={0.3}
-          />
-        )}
-      </li>
-      <li>
-        <Link className="neon" to="projects" onClick={() => setSound(!sound)}>
-          PROJECTS
-        </Link>
-        {sound && (
-          <ReactPlayer
-            url={sounds[0].src}
-            controls
-            width="0"
-            height="0"
-            playing={true}
-            volume={0.3}
-          />
-        )}
-        {!sound && (
-          <ReactPlayer
-            url={sounds[0].src}
-            controls
-            width="0"
-            height="0"
-            playing={true}
-            volume={0.3}
-          />
-        )}
       </li>
       <li>
         <Link
-          className="flicker2"
+          className={blue ? "flickerblue" : "flicker"}
+          to="aboutme"
+          onClick={() => select()}
+        >
+          {french ? "A PROPOS" : "ABOUT ME"}
+        </Link>
+      </li>
+      <li>
+        <Link
+          className={blue ? "neonblue" : "neon"}
+          to="skills"
+          onClick={() => select()}
+        >
+          {french ? "COMPETENCES" : "SKILLS"}
+        </Link>
+      </li>
+      <li>
+        <Link
+          className={blue ? "neonblue" : "neon"}
+          to="projects"
+          onClick={() => select()}
+        >
+          {french ? "PROJETS" : "PROJECTS"}
+        </Link>
+      </li>
+      <li>
+        <Link
+          className={blue ? "flicker2blue" : "flicker2"}
           to="contact"
-          onClick={() => setSound(!sound)}
+          onClick={() => select()}
         >
           CONTACT
         </Link>
-        {sound && (
-          <ReactPlayer
-            url={sounds[0].src}
-            controls
-            width="0"
-            height="0"
-            playing={true}
-            volume={0.3}
-          />
-        )}
-        {!sound && (
-          <ReactPlayer
-            url={sounds[0].src}
-            controls
-            width="0"
-            height="0"
-            playing={true}
-            volume={0.3}
-          />
-        )}
       </li>
     </ul>
   );

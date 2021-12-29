@@ -21,14 +21,14 @@
     }
   }
 
-  @keyframes flicker-bar {
+  @keyframes flicker {
     0%, 18%, 22%, 25%, 53%, 57%, 100% {
       text-shadow:
         0 0 4px #fff,
         0 0 11px #fff,
         0 0 19px #fff,
         0 0 40px rgb(230, 18, 124),
-        0 0 600px rgb(230, 18, 124),
+        0 0 60px rgb(230, 18, 124),
         0 0 80px rgb(230, 18, 124),
         0 0 90px rgb(230, 18, 124),
         0 0 100px rgb(230, 18, 124);
@@ -38,7 +38,24 @@
       }    
     }
 
-  @keyframes Neon {
+    @keyframes flickerblue {
+      0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow:
+          0 0 4px #fff,
+          0 0 11px #fff,
+          0 0 19px #fff,
+          0 0 40px rgb(18, 188, 230),
+          0 0 600px rgb(18, 188, 230),
+          0 0 80px rgb(18, 188, 230),
+          0 0 90px rgb(18, 188, 230),
+          0 0 100px rgb(18, 188, 230);
+        }
+      20%, 24%, 55% {        
+        text-shadow: none;
+        }    
+      }
+
+  @keyframes neon {
     0%{
       text-shadow:
         0 0 7px #fff,
@@ -57,6 +74,25 @@
     }
     }
 
+    @keyframes neonblue {
+      0%{
+        text-shadow:
+          0 0 7px #fff,
+          0 0 10px #fff,
+          0 0 42px rgb(18, 188, 230),
+          0 0 77px rgb(18, 188, 230),
+          0 0 100px rgb(18, 188, 230);
+      }
+      50% {
+        text-shadow:
+          0 0 7px #fff,
+          0 0 10px #fff,
+          0 0 32px rgb(18, 188, 230),
+          0 0 87px rgb(18, 188, 230),
+          0 0 120px rgb(18, 188, 230);
+      }
+      }
+
 .navbar {
   list-style: none;
   z-index: 1000;
@@ -72,7 +108,7 @@
     justify-content: space-around;
     align-items: center;
     position: fixed;
-    width: 100vw;
+    width: 99vw;
 }
 
 .navbar-scroll {
@@ -87,7 +123,7 @@
     justify-content: space-around;
     align-items: center;
     position: fixed;
-    width: 100vw;
+    width: 99vw;
 }
 
 .neon {
@@ -100,7 +136,20 @@
       0 0 42px rgb(230, 18, 124),
       0 0 77px rgb(230, 18, 124),
       0 0 100px rgb(230, 18, 124);
-      animation: Neon 0.5s infinite linear;
+      animation: neon 0.5s infinite linear;
+}
+
+.neonblue {
+  cursor: pointer;
+    text-decoration: none;
+    color: white;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 42px rgb(18, 188, 230),
+      0 0 77px rgb(18, 188, 230),
+      0 0 100px rgb(18, 188, 230);
+      animation: neonblue 0.5s infinite linear;
 }
 
 .flicker {
@@ -113,7 +162,20 @@
       0 0 42px rgb(230, 18, 124),
       0 0 77px rgb(230, 18, 124),
       0 0 100px rgb(230, 18, 124);
-      animation: flicker-bar 5s infinite alternate;
+      animation: flicker 5s infinite alternate;
+}
+
+.flickerblue {
+  cursor: pointer;
+  text-decoration: none;
+    color: white;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 42px rgb(18, 188, 230),
+      0 0 77px rgb(18, 188, 230),
+      0 0 100px rgb(18, 188, 230);
+      animation: flickerblue 5s infinite alternate;
 }
 
 .flicker2 {
@@ -127,4 +189,17 @@
       0 0 77px rgb(230, 18, 124),
       0 0 100px rgb(230, 18, 124);
       animation: flicker 3s infinite alternate;
+}
+
+.flicker2blue {
+  cursor:pointer;
+  text-decoration: none;
+    color: white;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 42px rgb(18, 188, 230),
+      0 0 77px rgb(18, 188, 230),
+      0 0 100px rgb(18, 188, 230);
+      animation: flickerblue 3s infinite alternate;
 }

@@ -3,15 +3,15 @@ import portrait from "../assets/red.png";
 import computer from "../assets/computer.gif";
 import coin from "../assets/coin.gif";
 import { useState } from "react";
-import ReactPlayer from "react-player";
-import sounds from "../sound";
 
-const Skills = () => {
+const Skills = ({ french, select, blue }) => {
   const [selected, setSelected] = useState(false);
   return (
     <div id="skills">
       <div>
-        <p className="skills-title">SKILLS</p>
+        <p className={blue ? "skills-title-blue" : "skills-title"}>
+          {french ? "COMPETENCES" : "SKILLS"}
+        </p>
         <div className="skills-container">
           <img
             className={
@@ -19,21 +19,24 @@ const Skills = () => {
             }
             src={portrait}
             alt="portrait"
-            onClick={() => setSelected(!selected)}
+            onClick={() => {
+              setSelected(!selected);
+              select();
+            }}
           />
-          {!selected && <p className="skills-player">SELECT PLAYER</p>}
+          {!selected && (
+            <p className="skills-player">
+              {french ? "SELECTIONNEZ VOTRE JOUEUR" : "SELECT PLAYER"}
+            </p>
+          )}
           {selected && (
             <div>
               <p className="skills-name">VALENTIN</p>
-              <p className="skills-fullstack">FULL STACK WEB DEVELOPER</p>
-              <ReactPlayer
-                url={sounds[0].src}
-                controls
-                width="0"
-                height="0"
-                playing={true}
-                volume={1}
-              />
+              <p className="skills-fullstack">
+                {french
+                  ? "DEVELOPPEUR WEB FULL STACK"
+                  : "FULL STACK WEB DEVELOPER"}
+              </p>
               <div className="skills-card">
                 <img
                   className="skills-computer"

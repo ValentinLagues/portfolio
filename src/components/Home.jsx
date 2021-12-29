@@ -1,32 +1,106 @@
-import ReactPlayer from "react-player";
+import useSound from "use-sound";
+import soundoption from "../mp3/option-sound2.wav";
 import { useState } from "react";
 import "./home.css";
-import playlist from "../music";
 
-const Home = () => {
-  const [english, setEnglish] = useState(true);
-  const [musicPlayer, setMusicPlayer] = useState(false);
+const Home = ({
+  french,
+  setFrench,
+  musicPlayer,
+  setMusicPlayer,
+  select,
+  blue,
+  setBlue,
+}) => {
+  const [option] = useSound(soundoption);
+  const [start, setStart] = useState(false);
   return (
     <div id="home">
       <div className="home-title">
-        <p className="home-name">VALENTIN LAGUES</p>
-        <p className="home-developper">WEB DEVELOPER</p>
-        <p
-          className={musicPlayer ? "home-close" : "home-start"}
-          onClick={() => setMusicPlayer(!musicPlayer)}
-        >
-          * PRESS START BUTTON *
+        <p className={blue ? "home-name-blue" : "home-name"}>VALENTIN LAGUES</p>
+        <p className={blue ? "home-developer-blue" : "home-developer"}>
+          {french ? "DEVELOPPEUR WEB" : "WEB DEVELOPER"}
         </p>
-        {musicPlayer && (
-          <div>
-            <ReactPlayer
-              url={playlist[Math.round(Math.random() * 5)].src}
-              controls
-              width="0"
-              height="0"
-              playing={true}
-              volume={0.3}
-            />
+        {!start && (
+          <p
+            className="press-start"
+            onClick={() => {
+              setStart(!start);
+              select();
+            }}
+          >
+            {french ? "APPUYER SUR START" : "PRESS START BUTTON"}
+          </p>
+        )}
+        {start && (
+          <div className="settings">
+            <div className="settings-container">
+              <p className="start-selected">
+                {french ? "PARAMETRES" : "SETTINGS"}
+              </p>
+              <div className="settings-list">
+                <div className="settings-card">
+                  <p className="settings-select">
+                    {french ? "LANGUE" : "LANGUAGE"}
+                  </p>
+                  <button
+                    type="button"
+                    className="settings-choice"
+                    onClick={() => {
+                      setFrench(!french);
+                      option();
+                    }}
+                  >
+                    {french ? "FR" : "EN"}
+                  </button>
+                </div>
+                <div className="settings-card">
+                  <p className="settings-select">
+                    {french ? "COULEUR" : "COLOR"}
+                  </p>
+                  <button
+                    type="button"
+                    className={blue ? "settings-blue" : "settings-pink"}
+                    onClick={() => {
+                      setBlue(!blue);
+                      option();
+                    }}
+                  >
+                    {blue && french
+                      ? "BLEU"
+                      : blue
+                      ? "BLUE"
+                      : french
+                      ? "ROSE"
+                      : "PINK"}
+                  </button>
+                </div>
+                <div className="settings-card">
+                  <p className="settings-select">
+                    {french ? "MUSIQUE" : "MUSIC"}
+                  </p>
+                  <button
+                    type="button"
+                    className={musicPlayer ? "music-on" : "settings-choice"}
+                    onClick={() => {
+                      setMusicPlayer(!musicPlayer);
+                      option();
+                    }}
+                  >
+                    {musicPlayer ? "ON" : "OFF"}
+                  </button>
+                </div>
+              </div>
+            </div>
+            <p
+              className="settings-save"
+              onClick={() => {
+                setStart(!start);
+                select();
+              }}
+            >
+              {french ? "SAUVEGARDER" : "SAVE"}
+            </p>
           </div>
         )}
       </div>

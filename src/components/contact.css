@@ -27,6 +27,25 @@
   }
   }
 
+  @keyframes neonblue {
+    0%{
+      text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 42px rgb(18, 188, 230),
+        0 0 77px rgb(18, 188, 230),
+        0 0 100px rgb(18, 188, 230);
+    }
+    50% {
+      text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 32px rgb(18, 188, 230),
+        0 0 87px rgb(18, 188, 230),
+        0 0 120px rgb(18, 188, 230);
+    }
+    }
+
   @keyframes flash {
     0%   { opacity:1; }
     30%   {opacity:0; }
@@ -34,6 +53,7 @@
   }
 
 #contact {
+  width:99vw;
 height:93.5vh;
 padding-top: 3%;
 display: flex;
@@ -54,6 +74,21 @@ justify-content: center;
       0 0 77px rgb(230, 18, 124),
       0 0 100px rgb(230, 18, 124);
     animation: neon 0.3s infinite linear;
+}
+
+.contact-title-blue {
+  font-family: SOR;
+  color: white;
+  width: 100%;
+    margin-top: 5vh;
+    font-size: 5vw;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 42px rgb(18, 188, 230),
+      0 0 77px rgb(18, 188, 230),
+      0 0 100px rgb(18, 188, 230);
+    animation: neonblue 0.3s infinite linear;
 }
 
 .contact-container {
@@ -146,7 +181,7 @@ line-height: 2.8vh;
 
 a {
   text-decoration: none;
-  color: darkgoldenrod;
+  color: goldenrod;
 }
 
 .contact-copyright {

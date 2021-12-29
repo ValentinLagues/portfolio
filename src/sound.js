@@ -1,5 +1,6 @@
 import sound1 from "./mp3/selectsound.wav";
 import sound2 from "./mp3/jacklaugh.wav";
+import sound3 from "./mp3/option-sound2.wav";
 
 const sounds = [
   {
@@ -9,6 +10,10 @@ const sounds = [
   {
     title: "laugh",
     src: sound2,
+  },
+  {
+    title: "option",
+    src: sound3,
   },
 ];
 
