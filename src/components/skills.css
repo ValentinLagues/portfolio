@@ -52,7 +52,6 @@
       100% { opacity:1; }
     }
 
-
 #skills {
   width: 99vw;
   height:100vh;
@@ -187,4 +186,138 @@
 .coin{
   width: 18px;
   height:18px;
+}
+
+@media screen and (max-width: 400px) {
+  #skills {
+    width: 100vw;
+    padding-top: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .skills-title {
+      font-family: SOR;
+      color: white;
+      width: 100%;
+        margin-top: 3vh;
+        font-size: 12vw;
+        text-shadow:
+          0 0 7px #fff,
+          0 0 10px #fff,
+          0 0 42px rgb(230, 18, 124),
+          0 0 77px rgb(230, 18, 124),
+          0 0 100px rgb(230, 18, 124);
+        animation: neon 0.3s infinite linear;
+  }
+  
+  .skills-title-blue {
+    font-family: SOR;
+    color: white;
+    width: 100%;
+      margin-top: 3vh;
+      font-size: 12vw;
+      text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 42px rgb(18, 188, 230),
+        0 0 77px rgb(18, 188, 230),
+        0 0 100px rgb(18, 188, 230);
+      animation: neonblue 0.3s infinite linear;
+  }
+  
+  .skills-container {
+    border-style:solid;
+    border-width: 5px 2px;
+    color: white; 
+    margin-top: 1em;
+    padding: 1.5em;
+      width: 75vw;
+      background-color: black;
+      display: flex;
+      flex-direction:column;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      text-align: justify;
+      text-justify:auto;
+      opacity:0.95;
+  } 
+  
+  .skills-portrait{
+    width: 10em;
+    height:10em;
+    border-style: solid;
+    border-width: 5px 2px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .skills-selected-portrait{
+    width: 10em;
+    height:10em;
+    border-style: solid;
+    border-width: 5px 2px;
+    color: goldenrod;
+    cursor: pointer;
+  }
+  
+  .skills-player {
+    margin-top: 15px;
+    font-family: SOR2;
+    color: white;
+    font-size: 4vw;
+    animation-duration: 1s;
+    animation-name: flash;
+    animation-iteration-count: infinite;
+    transition: none;
+    text-align: center;
+    line-height: 2.5vh;
+  }
+  
+  .skills-name {
+    margin-top: 15px;
+      font-family: SOR2;
+      color: white;
+      font-size: 4vw;
+      text-align: center;
+  }
+  
+  .skills-fullstack {
+    margin-top: 10px;
+    font-family: SOR2;
+    color: white;
+    font-size: 3vw;
+    text-align: center;
+  }
+  
+  .skills-card {
+    padding-top: 10px;
+    width: 100vw;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .skills-computer {
+    margin-left:1.5em;
+    width:120px;
+    height:140px;
+  }
+  
+  .skills-coins {
+    display: none;
+  }
+  
+  .skills-paragraph {
+    margin-left: 1.5em;
+    line-height: 1.8vh;
+    margin-right: 1.5em;
+    list-style: none;
+      font-family: SOR2;
+      color: white;
+      font-size: 3vw;
+  }
 }

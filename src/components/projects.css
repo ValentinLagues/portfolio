@@ -199,3 +199,148 @@
     width: 10vw;
     height: 20vh;
 }
+
+@media screen and (max-width: 400px) {
+  #projects {
+    width: 100vw;
+    padding-top: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .projects-title {
+      font-family: SOR;
+      color: white;
+      width: 100%;
+        margin-top: 3vh;
+        font-size: 12vw;
+        text-shadow:
+          0 0 7px #fff,
+          0 0 10px #fff,
+          0 0 42px rgb(230, 18, 124),
+          0 0 77px rgb(230, 18, 124),
+          0 0 100px rgb(230, 18, 124);
+        animation: neon 0.3s infinite linear;
+  }
+  
+  .projects-title-blue {
+    font-family: SOR;
+    color: white;
+    width: 100%;
+      margin-top: 3vh;
+      font-size: 12vw;
+      text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 42px rgb(18, 188, 230),
+        0 0 77px rgb(18, 188, 230),
+        0 0 100px rgb(18, 188, 230);
+      animation: neonblue 0.3s infinite linear;
+  }
+  
+  .projects-container {
+    border-style:solid;
+    border-width: 5px 2px;
+    color: white; 
+    margin: 1em;
+    padding: 1.5em;
+      width: 75vw;
+      background-color: black;
+      display: flex;
+      flex-direction:column;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      text-align: justify;
+      text-justify:auto;
+      opacity:0.95;
+  } 
+  
+  .projects-card {
+    width: 10em;
+    height:10em;
+    border-style: solid;
+    border-width: 5px 2px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .projects-selected-card{
+    display: none;
+  }
+  
+  .projects-select {
+    margin-top: 15px;
+  font-family: SOR2;
+  color: white;
+  font-size: 4vw;
+  text-align: center;
+  line-height: 2.5vh;
+  animation-duration: 1s;
+  animation-name: flash;
+  animation-iteration-count: infinite;
+  transition: none;
+  }
+  
+  .projects-list {
+    padding-top: 10px;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .projects-one {
+    margin-top: 10px;
+    margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+  }
+  
+  .projects-img {
+      width: 17em;
+      height:13em;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      border-style: solid;
+      border-width: 5px 2px;
+      color: white;
+      cursor: pointer;
+  }
+  
+  .projects-name {
+      width: 12em;
+      line-height: 2.5vh;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 5px;
+        font-family: SOR2;
+        color: goldenrod;
+        font-size: 4vw;
+        text-align: center;
+    }
+  
+  .projects-paragraph {
+      width: 12em;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    line-height: 2vh;
+      font-family: SOR2;
+      color: white;
+      font-size: 3vw;
+  }
+  
+  .computer-love {
+      display: none;
+  }
+}

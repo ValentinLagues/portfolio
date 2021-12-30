@@ -1,5 +1,6 @@
 import "./skills.css";
-import portrait from "../assets/red.png";
+import portrait from "../assets/pink.png";
+import portraitblue from "../assets/blue.png";
 import computer from "../assets/computer.gif";
 import coin from "../assets/coin.gif";
 import { useState } from "react";
@@ -17,7 +18,7 @@ const Skills = ({ french, select, blue }) => {
             className={
               selected ? "skills-selected-portrait" : "skills-portrait"
             }
-            src={portrait}
+            src={blue ? portraitblue : portrait}
             alt="portrait"
             onClick={() => {
               setSelected(!selected);

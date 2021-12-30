@@ -203,3 +203,121 @@
       0 0 100px rgb(18, 188, 230);
       animation: flickerblue 3s infinite alternate;
 }
+
+@media screen and (max-width: 400px) {
+  .navbar {
+    list-style: none;
+    z-index: 1;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    height: 20vh;
+      font-family: SOR;
+      color: white;
+      font-size: 11vw;
+      line-height: 4vh;
+      background-color: black;
+      display:flex;
+      flex-direction:column;
+      justify-content: space-around;
+      align-items: center;
+      position: fixed;
+      width: 100vw;
+  }
+  
+  .navbar-scroll {
+    list-style: none;
+    z-index: 1;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    height: 20vh;
+      font-family: SOR;
+      color: white;
+      font-size: 11vw;
+      line-height: 4vh;
+      background-color: black;
+      display:flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      position: fixed;
+      width: 100vw;
+  }
+  
+  .neon {
+    cursor: pointer;
+      text-decoration: none;
+      color: white;
+      text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 42px rgb(230, 18, 124),
+        0 0 77px rgb(230, 18, 124),
+        0 0 100px rgb(230, 18, 124);
+        animation: neon 0.5s infinite linear;
+  }
+  
+  .neonblue {
+    cursor: pointer;
+      text-decoration: none;
+      color: white;
+      text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 42px rgb(18, 188, 230),
+        0 0 77px rgb(18, 188, 230),
+        0 0 100px rgb(18, 188, 230);
+        animation: neonblue 0.5s infinite linear;
+  }
+  
+  .flicker {
+    cursor: pointer;
+    text-decoration: none;
+      color: white;
+      text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 42px rgb(230, 18, 124),
+        0 0 77px rgb(230, 18, 124),
+        0 0 100px rgb(230, 18, 124);
+        animation: flicker 5s infinite alternate;
+  }
+  
+  .flickerblue {
+    cursor: pointer;
+    text-decoration: none;
+      color: white;
+      text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 42px rgb(18, 188, 230),
+        0 0 77px rgb(18, 188, 230),
+        0 0 100px rgb(18, 188, 230);
+        animation: flickerblue 5s infinite alternate;
+  }
+  
+  .flicker2 {
+    cursor:pointer;
+    text-decoration: none;
+      color: white;
+      text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 42px rgb(230, 18, 124),
+        0 0 77px rgb(230, 18, 124),
+        0 0 100px rgb(230, 18, 124);
+        animation: flicker 3s infinite alternate;
+  }
+  
+  .flicker2blue {
+    cursor:pointer;
+    text-decoration: none;
+      color: white;
+      text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 42px rgb(18, 188, 230),
+        0 0 77px rgb(18, 188, 230),
+        0 0 100px rgb(18, 188, 230);
+        animation: flickerblue 3s infinite alternate;
+  }
+}

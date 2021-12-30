@@ -118,3 +118,75 @@ line-height: 3vh;
   cursor: pointer;
   color:blue;
 }
+
+@media screen and (max-width: 400px) {
+  #aboutme {
+    width:100vw;
+   padding-top: 20vh;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+ }
+ 
+ .about-title {
+   font-family: SOR;
+   width: 100%;
+   color: white;
+   margin-top: 3vh;
+     font-size: 12vw;
+     text-shadow:
+       0 0 7px #fff,
+       0 0 10px #fff,
+       0 0 42px rgb(230, 18, 124),
+       0 0 77px rgb(230, 18, 124),
+       0 0 100px rgb(230, 18, 124);
+     animation: neon 0.3s infinite linear;
+ }
+ 
+ .about-title-blue {
+   font-family: SOR;
+   width: 100%;
+   color: white;
+   margin-top: 3vh;
+     font-size: 12vw;
+     text-shadow:
+       0 0 7px #fff,
+       0 0 10px #fff,
+       0 0 42px rgb(18, 188, 230),
+       0 0 77px rgb(18, 188, 230),
+       0 0 100px rgb(18, 188, 230);
+     animation: neonblue 0.3s infinite linear;
+ }
+ 
+ .about-container {
+   margin-top: 1em;
+   padding: 1.5em;
+   width: 75vw;
+     background-color: black;
+     border-style: solid;
+     color:white;
+     border-width: 5px 2px;
+     justify-content: center;
+     align-content: center;
+     opacity:0.95;
+ }
+ 
+ .about-img {
+  justify-content: center;
+  width: 65vw;
+  height: 25vh;
+  margin-bottom: 1em;
+ }
+ 
+ .about-paragraph {
+     font-family: SOR2;
+     color: white;
+ font-size: 3vw;
+ line-height: 1.8vh;
+ } 
+ 
+ .about-link {
+   cursor: pointer;
+   color:blue;
+ }
+}

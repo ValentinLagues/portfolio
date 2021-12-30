@@ -95,55 +95,57 @@ const Contact = ({ french, select, blue }) => {
               <img className="contact-img-jack" src={jack} alt="jack" />
             </div>
           )}
-        </div>
-        <div>
           {french ? (
-            <p className="contact-hypercan">
-              J'AIMERAIS REMERCIER LE GROUPE HYPERCAN DE M'AVOIR DONNE
-              L'AUTORISATION
-              <br /> D'UTILISER LA MUSIQUE DE LEUR ALBUM 'STELLAR ECHOES'.
-              <br />
-              DECOUVREZ-LES SUR{" "}
-              <a
-                href="https://hypercan.bandcamp.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                BANDCAMP
-              </a>{" "}
-              ET{" "}
-              <a
-                href="https://www.youtube.com/channel/UCZ-V2xGSCYDZfN_dBg89czQ"
-                target="_blank"
-                rel="noreferrer"
-              >
-                YOUTUBE
-              </a>
-              .
-            </p>
+            <div className="hypercan-container">
+              <p className="contact-hypercan">
+                * J'AIMERAIS REMERCIER LE GROUPE HYPERCAN DE M'AVOIR DONNE
+                L'AUTORISATION
+                <br /> D'UTILISER LA MUSIQUE DE LEUR ALBUM 'STELLAR ECHOES'.
+                <br />
+                DECOUVREZ-LES SUR{" "}
+                <a
+                  href="https://hypercan.bandcamp.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  BANDCAMP
+                </a>{" "}
+                ET{" "}
+                <a
+                  href="https://www.youtube.com/channel/UCZ-V2xGSCYDZfN_dBg89czQ"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  YOUTUBE
+                </a>
+                .
+              </p>
+            </div>
           ) : (
-            <p className="contact-hypercan">
-              I WOULD LIKE TO THANK HYPERCAN WHO GAVE ME THE AUTHORIZATION
-              <br /> OF USING THE MUSIC FROM THEIR ALBUM 'STELLAR ECHOES'.
-              <br />
-              GO DISCOVER THEM ON{" "}
-              <a
-                href="https://hypercan.bandcamp.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                BANDCAMP
-              </a>{" "}
-              AND{" "}
-              <a
-                href="https://www.youtube.com/channel/UCZ-V2xGSCYDZfN_dBg89czQ"
-                target="_blank"
-                rel="noreferrer"
-              >
-                YOUTUBE
-              </a>
-              .
-            </p>
+            <div className="hypercan-container">
+              <p className="contact-hypercan">
+                * I WOULD LIKE TO THANK HYPERCAN WHO GAVE ME THE AUTHORIZATION
+                <br /> OF USING THE MUSIC FROM THEIR ALBUM 'STELLAR ECHOES'.
+                <br />
+                GO DISCOVER THEM ON{" "}
+                <a
+                  href="https://hypercan.bandcamp.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  BANDCAMP
+                </a>{" "}
+                AND{" "}
+                <a
+                  href="https://www.youtube.com/channel/UCZ-V2xGSCYDZfN_dBg89czQ"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  YOUTUBE
+                </a>
+                .
+              </p>
+            </div>
           )}
         </div>
         <p className="contact-copyright">COPYRIGHT. VALENTIN LAGUES. 2021</p>
