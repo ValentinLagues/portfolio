@@ -188,7 +188,7 @@
   height:18px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   #skills {
     width: 100vw;
     padding-top: 20vh;
@@ -267,13 +267,13 @@
     margin-top: 15px;
     font-family: SOR2;
     color: white;
-    font-size: 4vw;
+    font-size: 15px;
     animation-duration: 1s;
     animation-name: flash;
     animation-iteration-count: infinite;
     transition: none;
     text-align: center;
-    line-height: 2.5vh;
+    line-height: 20px;
   }
   
   .skills-name {
@@ -318,6 +318,6 @@
     list-style: none;
       font-family: SOR2;
       color: white;
-      font-size: 3vw;
+      font-size: 10px;
   }
 }

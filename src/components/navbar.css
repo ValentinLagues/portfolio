@@ -204,7 +204,7 @@
       animation: flickerblue 3s infinite alternate;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .navbar {
     list-style: none;
     z-index: 1;
@@ -213,8 +213,8 @@
     height: 20vh;
       font-family: SOR;
       color: white;
-      font-size: 11vw;
-      line-height: 4vh;
+      font-size: 9vw;
+      line-height: 35px;
       background-color: black;
       display:flex;
       flex-direction:column;
@@ -232,8 +232,8 @@
     height: 20vh;
       font-family: SOR;
       color: white;
-      font-size: 11vw;
-      line-height: 4vh;
+      font-size: 9vw;
+      line-height: 35px;
       background-color: black;
       display:flex;
       flex-direction: column;

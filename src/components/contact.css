@@ -193,7 +193,9 @@ a {
     text-align: center;
 }
 
-@media screen and (max-width: 400px) {
+/* PHONE RESPONSIVE */
+
+@media screen and (max-width: 600px) {
   #contact {
     width:100vw;
   padding-top: 20vh;
@@ -232,28 +234,10 @@ a {
       animation: neonblue 0.3s infinite linear;
   }
   
-  .contact-container {
-  border-style:solid;
-  border-width: 5px 2px;
-  color: white; 
-  margin-top: 1em;
-  padding: 1.5em;
-    width: 75vw;
-    background-color: black;
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    text-align: justify;
-    text-justify:auto;
-    opacity:0.95;
-  } 
-  
   .contact-contract {
     justify-content: center;
     text-align: center;
-  line-height: 1.5vh;
+  line-height: 17px;
     font-family: SOR2;
     color: goldenrod;
     font-size: 2.7vw;
@@ -263,7 +247,7 @@ a {
   .contact-paragraph {
     justify-content: center;
     text-align: center;
-  line-height: 1.5vh;
+  line-height: 17px;
     font-family: SOR2;
     color: white;
     font-size: 2.5vw;
@@ -275,25 +259,13 @@ a {
     margin-bottom: 2vh;
   }
   
-  .contact-logos-list {
-    display: flex;
-    list-style: none;
-    flex-direction: row;
-  }
-  
-  .contact-logos {
-    height: 3em;
-    width: 3em;
-    padding: 1em;
-  }
-  
   .contact-download {
     text-align: center;
     margin-top: 10px;
     font-family: SOR2;
     color: white;
     font-size: 2.5vw;
-    line-height: 1.5vh;
+    line-height: 17px;
     animation-duration: 1s;
     animation-name: flash;
     animation-iteration-count: infinite;

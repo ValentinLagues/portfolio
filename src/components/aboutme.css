@@ -119,7 +119,7 @@ line-height: 3vh;
   color:blue;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   #aboutme {
     width:100vw;
    padding-top: 20vh;
@@ -182,7 +182,7 @@ line-height: 3vh;
      font-family: SOR2;
      color: white;
  font-size: 3vw;
- line-height: 1.8vh;
+ line-height: 20px;
  } 
  
  .about-link {

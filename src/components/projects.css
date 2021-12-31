@@ -200,7 +200,7 @@
     height: 20vh;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   #projects {
     width: 100vw;
     padding-top: 20vh;
@@ -238,24 +238,6 @@
         0 0 100px rgb(18, 188, 230);
       animation: neonblue 0.3s infinite linear;
   }
-  
-  .projects-container {
-    border-style:solid;
-    border-width: 5px 2px;
-    color: white; 
-    margin: 1em;
-    padding: 1.5em;
-      width: 75vw;
-      background-color: black;
-      display: flex;
-      flex-direction:column;
-      justify-content: center;
-      align-content: center;
-      align-items: center;
-      text-align: justify;
-      text-justify:auto;
-      opacity:0.95;
-  } 
   
   .projects-card {
     width: 10em;
@@ -334,7 +316,7 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-    line-height: 2vh;
+    line-height: 18px;
       font-family: SOR2;
       color: white;
       font-size: 3vw;

@@ -270,7 +270,7 @@
   text-align: center;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   #home {
     padding-top: 8vh;
     z-index: 0;
@@ -296,7 +296,7 @@
       }
   
   .home-name {
-      font-size: 20vw;
+      font-size: 70px;
       text-shadow:
         0 0 7px #fff,
         0 0 10px #fff,
@@ -307,7 +307,7 @@
   }
   
   .home-name-blue {
-      font-size: 20vw;
+      font-size: 70px;
       text-shadow:
         0 0 7px #fff,
         0 0 10px #fff,
@@ -320,7 +320,7 @@
   .home-developer {
       margin-top: 15px;
       margin-bottom: 15px;
-      font-size: 11.5vw;
+      font-size: 50px;
       text-shadow:
         0 0 7px #fff,
         0 0 10px #fff,
@@ -333,7 +333,7 @@
   .home-developer-blue {
     margin-top: 15px;
     margin-bottom: 15px;
-    font-size: 11.5vw;
+    font-size: 50px;
     text-shadow:
       0 0 7px #fff,
       0 0 10px #fff,
@@ -350,8 +350,8 @@
     margin-top: 2em;
     font-family: SOR2;
     color: white;
-    line-height: 3.5vh;
-    font-size: 6vw;
+    line-height: 30px;
+    font-size: 20px;
     animation-duration: 1s;
     animation-name: flash;
     animation-iteration-count: infinite;
@@ -362,7 +362,7 @@
     padding-bottom: 1.5em;
     font-family: SOR2;
     color: white;
-    font-size: 6vw;
+    font-size: 20px;
     text-align: center;
   }
   
@@ -396,27 +396,27 @@
   .settings-music{
     font-family: SOR2;
     list-style: none;
-    line-height: 4vh;
+    line-height: 15px;
     text-align: center;
   }
   
   .settings-language{
     font-family: SOR2;
     list-style: none;
-    line-height: 3vh;
+    line-height: 12px;
     text-align: center;
   }
   
   .settings-select{
     padding-bottom: 1em;
     font-family: SOR2;
-    font-size:4.5vw;
+    font-size:15px;
   }
   
   .settings-choice{
     font-family: SOR2;
     cursor: pointer;
-    font-size: 4vw;
+    font-size: 12px;
     margin-bottom: 2em;
   }
   
@@ -424,7 +424,7 @@
     font-family: SOR2;
     color:rgb(18, 188, 230);
     cursor: pointer;
-    font-size: 4vw;
+    font-size: 12px;
     margin-bottom: 2em;
   }
   
@@ -432,7 +432,7 @@
     font-family: SOR2;
     color:rgb(230, 18, 124);
     cursor: pointer;
-    font-size: 4vw;
+    font-size: 12px;
     margin-bottom: 2em;
   }
   
@@ -440,7 +440,7 @@
     font-family: SOR2;
     color: goldenrod;
     cursor: pointer;
-    font-size: 4vw;
+    font-size: 12px;
     margin-bottom: 2em;
   }
   
@@ -449,7 +449,7 @@
     margin-top: 1em;
     font-family: SOR2;
     color: white;
-    font-size: 6vw;
+    font-size: 20px;
     text-align: center;
   }
   }
