@@ -1,12 +1,11 @@
 import { useState } from "react";
-import street from "../assets/street.gif";
 import heroes from "../assets/wildheroes.png";
 import olentzero from "../assets/olentzero.png";
-import computerlove from "../assets/computerlove.gif";
 import "./projects.css";
 
 const Projects = ({ french, select, blue }) => {
-  const [selectedProject, setSelectedProject] = useState(false);
+  const [selectedProject1, setSelectedProject1] = useState(false);
+  const [selectedProject2, setSelectedProject2] = useState(false);
   return (
     <div id="projects">
       <div>
@@ -14,89 +13,142 @@ const Projects = ({ french, select, blue }) => {
           {french ? "PROJETS" : "PROJECTS"}
         </p>
         <div className="projects-container">
-          <img
-            className={
-              selectedProject ? "projects-selected-card" : "projects-card"
-            }
-            src={street}
-            alt="street"
-            onClick={() => {
-              setSelectedProject(!selectedProject);
-              select();
-            }}
-          />
-          {!selectedProject && (
-            <p className="projects-select">
-              {french ? "SELECTIONNEZ UN PROJET" : "SELECT PROJECTS"}
-            </p>
-          )}
-          {selectedProject && (
-            <div className="projects-list">
-              <div className="projects-one">
-                <a
-                  href="https://valentinlagues.github.io/Wild-Heroes/#/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img className="projects-img" src={heroes} alt="heroes" />
-                </a>
-                <p className="projects-name">WILD-HEROES</p>
-                {french ? (
-                  <p className="projects-paragraph">
-                    PROJEt
-                    <br />
-                    DUREE : 5 SEMAINES
-                    <br />
-                    REACT, API, CSS
-                  </p>
-                ) : (
-                  <p className="projects-paragraph">
-                    PROJECT
-                    <br />
-                    DURATION : 5 WEEKS
-                    <br />
-                    REACT, API, CSS
-                  </p>
-                )}
-              </div>
+          <p className="projects-select">
+            {french ? "SELECTIONNEZ UN PROJET" : "SELECT PROJECTS"}
+          </p>
+          <div className="projects-list">
+            <div className="projects-one">
               <img
-                className="computer-love"
-                src={computerlove}
-                alt="computerlove"
+                className="projects-img"
+                src={heroes}
+                alt="heroes"
+                onClick={() => {
+                  setSelectedProject1(!selectedProject1);
+                  select();
+                }}
               />
-              <div className="projects-one">
-                <a
-                  href="https://valentinlagues.github.io/Olentzero-Music/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    className="projects-img"
-                    src={olentzero}
-                    alt="olentzero"
-                  />
-                </a>
-                <p className="projects-name">OLENTZERO-MUSIC</p>
-                {french ? (
-                  <p className="projects-paragraph">
-                    HACKATHON
-                    <br />
-                    DUREE : 31 HEURES
-                    <br />
-                    REACT, CSS
-                  </p>
-                ) : (
-                  <p className="projects-paragraph">
-                    HACKATHON
-                    <br />
-                    DURATION : 31 HOURS
-                    <br />
-                    REACT, CSS
-                  </p>
-                )}
-              </div>
+              {selectedProject1 && (
+                <div className="projects-description">
+                  <p className="projects-name">WILD-HEROES</p>
+                  {french ? (
+                    <p className="projects-paragraph">
+                      PROJET
+                      <br />
+                      DUREE : 5 SEMAINES
+                      <br />
+                      REACT, API, CSS, AGILE
+                      <br />
+                      <br />
+                      CE PROJET EN EQUIPE DE 5 SEMAINES A ETE REALISE DANS LE
+                      CADRE DE MA FORMATION A LA WILD CODE SCHOOL AFIN DE CREER
+                      UNE APPLICATION EN REACT DE A A Z EN UTILISANT LA METHODE
+                      AGILE AINSI QUE DES APPELS API.
+                      <br /> CLIQUEZ{" "}
+                      <a
+                        className="projects-link"
+                        href="https://valentinlagues.github.io/Wild-Heroes/#/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        ICI
+                      </a>{" "}
+                      POUR ACCEDER AU SITE
+                    </p>
+                  ) : (
+                    <p className="projects-paragraph">
+                      PROJECT
+                      <br />
+                      DURATION : 5 WEEKS
+                      <br />
+                      REACT, API, CSS, AGILE
+                      <br />
+                      <br />
+                      THIS TEAM PROJECT WAS REALIZED IN 5 WEEKS DURING MY WILD
+                      CODE SCHOOL PROGRAM IN ORDER TO CREATE A REACT APP FROM A
+                      TO Z USING AGILE AND API CALLS.
+                      <br />
+                      CLICK{" "}
+                      <a
+                        className="projects-link"
+                        href="https://valentinlagues.github.io/Wild-Heroes/#/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        HERE
+                      </a>{" "}
+                      TO VISIT
+                    </p>
+                  )}
+                </div>
+              )}
             </div>
-          )}
+            <div className="projects-one">
+              <img
+                className="projects-img"
+                src={olentzero}
+                alt="olentzero"
+                onClick={() => {
+                  setSelectedProject2(!selectedProject2);
+                  select();
+                }}
+              />
+              {selectedProject2 && (
+                <div className="projects-description">
+                  <p className="projects-name">OLENTZERO-MUSIC</p>
+                  {french ? (
+                    <p className="projects-paragraph">
+                      HACKATHON
+                      <br />
+                      DUREE : 31 HEURES
+                      <br />
+                      REACT, CSS
+                      <br />
+                      <br />
+                      CE HACKATHON DE 31 HEURES A ETE REALISE DANS LE CADRE DE
+                      MA FORMATION A LA WILD CODE SCHOOL. LE THEME IMPOSE ETAIT
+                      LA MUSIQUE ET NOUS AVONS DECIDE DE CREER UN CALENDRIER DE
+                      L'AVENT MUSICAL.
+                      <br />
+                      CLIQUEZ{" "}
+                      <a
+                        className="projects-link"
+                        href="https://valentinlagues.github.io/Olentzero-Music/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        ICI
+                      </a>{" "}
+                      POUR ACCEDER AU SITE
+                    </p>
+                  ) : (
+                    <p className="projects-paragraph">
+                      HACKATHON
+                      <br />
+                      DURATION : 31 HOURS
+                      <br />
+                      REACT, CSS
+                      <br />
+                      <br />
+                      THIS 31 HOURS HACKATHON WAS REALIZED DURING MY WILD CODE
+                      SCHOOL PROGRAM. THE IMPOSED THEME WAS THE MUSIC AND WE
+                      CHOSE TO CREATE A MUSICAL ADVENT CALENDAR.
+                      <br />
+                      CLICK{" "}
+                      <a
+                        className="projects-link"
+                        href="https://valentinlagues.github.io/Olentzero-Music/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        HERE
+                      </a>{" "}
+                      TO VISIT
+                    </p>
+                  )}
+                </div>
+              )}
+            </div>
+          </div>
         </div>
       </div>
     </div>

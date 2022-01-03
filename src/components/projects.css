@@ -128,7 +128,7 @@
 }
 
 .projects-select {
-  margin-top: 15px;
+  margin-bottom: 15px;
   font-family: SOR2;
   color: white;
   font-size: 1.5vw;
@@ -168,7 +168,7 @@
 }
 
 .projects-name {
-    width: 12em;
+    width: 22em;
     line-height: 2.2vh;
     align-content: center;
     align-items: center;
@@ -183,7 +183,7 @@
   }
 
 .projects-paragraph {
-    width: 12em;
+    width: 22em;
     align-content: center;
     align-items: center;
     justify-content: center;
@@ -192,12 +192,6 @@
     font-family: SOR2;
     color: white;
     font-size: 1vw;
-}
-
-.computer-love {
-    margin-top: 12vh;
-    width: 10vw;
-    height: 20vh;
 }
 
 @media screen and (max-width: 600px) {
@@ -238,6 +232,24 @@
         0 0 100px rgb(18, 188, 230);
       animation: neonblue 0.3s infinite linear;
   }
+  
+  .projects-container {
+    border-style:solid;
+    border-width: 5px 2px;
+    color: white; 
+    margin: 1em;
+    padding: 1.5em;
+      width: 75vw;
+      background-color: black;
+      display: flex;
+      flex-direction:column;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      text-align: justify;
+      text-justify:auto;
+      opacity:0.95;
+  } 
   
   .projects-card {
     width: 10em;
@@ -316,13 +328,9 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-    line-height: 18px;
+    line-height: 2vh;
       font-family: SOR2;
       color: white;
       font-size: 3vw;
-  }
-  
-  .computer-love {
-      display: none;
   }
 }

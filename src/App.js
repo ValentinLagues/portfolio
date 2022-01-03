@@ -18,7 +18,7 @@ function App() {
   const [blue, setBlue] = useState(false);
   const [musicPlayer, setMusicPlayer] = useState(false);
   return (
-    <div className="App">
+    <div className={blue ? "App-blue" : "App"}>
       {musicPlayer && (
         <ReactPlayer
           url={playlist[Math.round(Math.random() * 5)].src}

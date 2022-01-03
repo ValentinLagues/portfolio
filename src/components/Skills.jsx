@@ -14,6 +14,11 @@ const Skills = ({ french, select, blue }) => {
           {french ? "COMPETENCES" : "SKILLS"}
         </p>
         <div className="skills-container">
+          {!selected && (
+            <p className="skills-player">
+              {french ? "SELECTIONNEZ VOTRE JOUEUR" : "SELECT PLAYER"}
+            </p>
+          )}
           <img
             className={
               selected ? "skills-selected-portrait" : "skills-portrait"
@@ -25,11 +30,6 @@ const Skills = ({ french, select, blue }) => {
               select();
             }}
           />
-          {!selected && (
-            <p className="skills-player">
-              {french ? "SELECTIONNEZ VOTRE JOUEUR" : "SELECT PLAYER"}
-            </p>
-          )}
           {selected && (
             <div>
               <p className="skills-name">VALENTIN</p>
@@ -54,6 +54,9 @@ const Skills = ({ french, select, blue }) => {
                   <li>
                     <img className="coin" src={coin} alt="coin" />
                     <img className="coin" src={coin} alt="coin" />
+                    <img className="coin" src={coin} alt="coin" />
+                  </li>
+                  <li>
                     <img className="coin" src={coin} alt="coin" />
                   </li>
                   <li>
@@ -92,6 +95,7 @@ const Skills = ({ french, select, blue }) => {
                 <ul className="skills-paragraph">
                   <li>HTML</li>
                   <li>CSS</li>
+                  <li>SCSS</li>
                   <li>JAVASCRIPT</li>
                   <li>TYPESCRIPT</li>
                   <li>REACT</li>
