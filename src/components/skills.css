@@ -106,7 +106,6 @@
     align-items: center;
     text-align: justify;
     text-justify:auto;
-    opacity:0.95;
 } 
 
 .skills-portrait{
@@ -116,6 +115,7 @@
   border-width: 5px 2px;
   color: white;
   cursor: pointer;
+  filter:brightness(50%);
 }
 
 .skills-selected-portrait{
@@ -125,10 +125,11 @@
   border-width: 5px 2px;
   color: goldenrod;
   cursor: pointer;
+  filter:brightness(120%);
 }
 
 .skills-player {
-  margin-bottom: 15px;
+  margin-top: 15px;
   font-family: SOR2;
   color: white;
   font-size: 1.5vw;

@@ -19,7 +19,9 @@ const Projects = ({ french, select, blue }) => {
           <div className="projects-list">
             <div className="projects-one">
               <img
-                className="projects-img"
+                className={
+                  selectedProject1 ? "projects-img-selected" : "projects-img"
+                }
                 src={heroes}
                 alt="heroes"
                 onClick={() => {
@@ -27,9 +29,12 @@ const Projects = ({ french, select, blue }) => {
                   select();
                 }}
               />
+              {!selectedProject1 && (
+                <p className="projects-name">WILD-HEROES</p>
+              )}
               {selectedProject1 && (
                 <div className="projects-description">
-                  <p className="projects-name">WILD-HEROES</p>
+                  <p className="projects-name-selected">WILD-HEROES</p>
                   {french ? (
                     <p className="projects-paragraph">
                       PROJET
@@ -84,7 +89,9 @@ const Projects = ({ french, select, blue }) => {
             </div>
             <div className="projects-one">
               <img
-                className="projects-img"
+                className={
+                  selectedProject2 ? "projects-img-selected" : "projects-img"
+                }
                 src={olentzero}
                 alt="olentzero"
                 onClick={() => {
@@ -92,9 +99,12 @@ const Projects = ({ french, select, blue }) => {
                   select();
                 }}
               />
+              {!selectedProject2 && (
+                <p className="projects-name">OLENTZERO-MUSIC</p>
+              )}
               {selectedProject2 && (
                 <div className="projects-description">
-                  <p className="projects-name">OLENTZERO-MUSIC</p>
+                  <p className="projects-name-selected">OLENTZERO-MUSIC</p>
                   {french ? (
                     <p className="projects-paragraph">
                       HACKATHON

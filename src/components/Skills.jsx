@@ -14,11 +14,6 @@ const Skills = ({ french, select, blue }) => {
           {french ? "COMPETENCES" : "SKILLS"}
         </p>
         <div className="skills-container">
-          {!selected && (
-            <p className="skills-player">
-              {french ? "SELECTIONNEZ VOTRE JOUEUR" : "SELECT PLAYER"}
-            </p>
-          )}
           <img
             className={
               selected ? "skills-selected-portrait" : "skills-portrait"
@@ -30,6 +25,11 @@ const Skills = ({ french, select, blue }) => {
               select();
             }}
           />
+          {!selected && (
+            <p className="skills-player">
+              {french ? "SELECTIONNEZ VOTRE JOUEUR" : "SELECT PLAYER"}
+            </p>
+          )}
           {selected && (
             <div>
               <p className="skills-name">VALENTIN</p>

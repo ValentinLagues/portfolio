@@ -106,7 +106,6 @@ padding: 1.5em;
   align-items: center;
   text-align: justify;
   text-justify:auto;
-  opacity:0.95;
 } 
 
 .contact-contract {
@@ -181,7 +180,7 @@ line-height: 2.8vh;
 
 a {
   text-decoration: none;
-  color: goldenrod;
+  color: blue;
 }
 
 .contact-copyright {
@@ -296,7 +295,7 @@ a {
   
   a {
     text-decoration: none;
-    color: goldenrod;
+    color: blue;
   }
   
   .contact-copyright {

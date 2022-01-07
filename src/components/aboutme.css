@@ -95,14 +95,16 @@
     border-width: 5px 2px;
     justify-content: center;
     align-content: center;
-    opacity:0.95;
 }
 
 .about-img {
+  border-style: solid;
+  border-width: 5px 2px;
   justify-content: center;
   width: 35vw;
   height: 35vh;
   margin-bottom: 1em;
+  filter:brightness(120%);
 }
 
 .about-paragraph {
@@ -168,7 +170,6 @@ line-height: 3vh;
      border-width: 5px 2px;
      justify-content: center;
      align-content: center;
-     opacity:0.95;
  }
  
  .about-img {
@@ -176,6 +177,7 @@ line-height: 3vh;
   width: 65vw;
   height: 25vh;
   margin-bottom: 1em;
+  filter:brightness(120%);
  }
  
  .about-paragraph {

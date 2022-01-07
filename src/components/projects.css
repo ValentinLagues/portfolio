@@ -106,26 +106,7 @@
     align-items: center;
     text-align: justify;
     text-justify:auto;
-    opacity:0.95;
 } 
-
-.projects-card {
-  width: 12em;
-  height:12em;
-  border-style: solid;
-  border-width: 5px 2px;
-  color: white;
-  cursor: pointer;
-}
-
-.projects-selected-card{
-  width: 12em;
-  height:12em;
-  border-style: solid;
-  border-width: 5px 2px;
-  color: goldenrod;
-  cursor: pointer;
-}
 
 .projects-select {
   margin-bottom: 15px;
@@ -165,9 +146,35 @@
     border-width: 5px 2px;
     color: white;
     cursor: pointer;
+    filter: brightness(80%);
+}
+
+.projects-img-selected {
+  width: 12em;
+  height:12em;
+  border-style: solid;
+  border-width: 5px 2px;
+  color: goldenrod;
+  cursor: pointer;
+  filter: brightness(120%);
 }
 
 .projects-name {
+  width: 22em;
+  line-height: 2.2vh;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+    font-family: SOR2;
+    color: white;
+    font-size: 1vw;
+    text-align: center;
+}
+
+.projects-name-selected {
     width: 22em;
     line-height: 2.2vh;
     align-content: center;
@@ -248,21 +255,7 @@
       align-items: center;
       text-align: justify;
       text-justify:auto;
-      opacity:0.95;
   } 
-  
-  .projects-card {
-    width: 10em;
-    height:10em;
-    border-style: solid;
-    border-width: 5px 2px;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .projects-selected-card{
-    display: none;
-  }
   
   .projects-select {
     margin-top: 15px;
@@ -305,9 +298,38 @@
       border-width: 5px 2px;
       color: white;
       cursor: pointer;
+      filter: brightness(80%);
   }
+
+  .projects-img-selected {
+    width: 17em;
+    height:13em;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-style: solid;
+    border-width: 5px 2px;
+    color: goldenrod;
+    cursor: pointer;
+    filter: brightness(120%);
+}
   
   .projects-name {
+    width: 12em;
+    line-height: 2.5vh;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+      font-family: SOR2;
+      color: white;
+      font-size: 4vw;
+      text-align: center;
+  }
+
+  .projects-name-selected {
       width: 12em;
       line-height: 2.5vh;
       align-content: center;

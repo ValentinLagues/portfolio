@@ -55,9 +55,7 @@ const Home = ({
                   </button>
                 </div>
                 <div className="settings-card">
-                  <p className="settings-select">
-                    {french ? "COULEUR" : "COLOR"}
-                  </p>
+                  <p className="settings-select">THEME</p>
                   <button
                     type="button"
                     className={blue ? "settings-blue" : "settings-pink"}
@@ -67,12 +65,12 @@ const Home = ({
                     }}
                   >
                     {blue && french
-                      ? "BLEU"
+                      ? "RUE"
                       : blue
-                      ? "BLUE"
+                      ? "STREET"
                       : french
-                      ? "ROSE"
-                      : "PINK"}
+                      ? "VILLE"
+                      : "CITY"}
                   </button>
                 </div>
                 <div className="settings-card">

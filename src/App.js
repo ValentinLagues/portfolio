@@ -1,5 +1,3 @@
-import ReactPlayer from "react-player";
-import playlist from "./music";
 import React from "react";
 import { useState } from "react";
 import useSound from "use-sound";
@@ -7,6 +5,7 @@ import soundselect from "./mp3/selectsound.wav";
 import "./app.css";
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
+import Music from "./components/music";
 import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
@@ -17,18 +16,9 @@ function App() {
   const [french, setFrench] = useState(false);
   const [blue, setBlue] = useState(false);
   const [musicPlayer, setMusicPlayer] = useState(false);
+
   return (
     <div className={blue ? "App-blue" : "App"}>
-      {musicPlayer && (
-        <ReactPlayer
-          url={playlist[Math.round(Math.random() * 5)].src}
-          controls
-          width="0"
-          height="0"
-          playing={true}
-          volume={0.3}
-        />
-      )}
       <NavBar french={french} select={select} blue={blue} />
       <Home
         french={french}
@@ -39,6 +29,7 @@ function App() {
         blue={blue}
         setBlue={setBlue}
       />
+      <Music musicPlayer={musicPlayer} />
       <AboutMe french={french} select={select} blue={blue} />
       <Skills french={french} select={select} blue={blue} />
       <Projects french={french} select={select} blue={blue} />
