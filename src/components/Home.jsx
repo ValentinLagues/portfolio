@@ -29,7 +29,7 @@ const Home = ({
               select();
             }}
           >
-            {french ? "APPUYER SUR START" : "PRESS START BUTTON"}
+            {french ? "APPUYEZ SUR START" : "PRESS START BUTTON"}
           </p>
         )}
         {start && (

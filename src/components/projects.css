@@ -204,6 +204,7 @@
 @media screen and (max-width: 600px) {
   #projects {
     width: 100vw;
+    height: 200vh;
     padding-top: 20vh;
     display: flex;
     flex-wrap: wrap;
@@ -263,7 +264,7 @@
   color: white;
   font-size: 4vw;
   text-align: center;
-  line-height: 2.5vh;
+  line-height: 3vh;
   animation-duration: 1s;
   animation-name: flash;
   animation-iteration-count: infinite;
@@ -315,7 +316,7 @@
 }
   
   .projects-name {
-    width: 12em;
+    width: 15em;
     line-height: 2.5vh;
     align-content: center;
     align-items: center;
@@ -330,7 +331,7 @@
   }
 
   .projects-name-selected {
-      width: 12em;
+      width: 15em;
       line-height: 2.5vh;
       align-content: center;
       align-items: center;
@@ -345,12 +346,12 @@
     }
   
   .projects-paragraph {
-      width: 12em;
+      width: 20em;
       align-content: center;
       align-items: center;
       justify-content: center;
       text-align: center;
-    line-height: 2vh;
+    line-height: 2.5vh;
       font-family: SOR2;
       color: white;
       font-size: 3vw;

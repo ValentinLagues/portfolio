@@ -192,6 +192,7 @@
 @media screen and (max-width: 600px) {
   #skills {
     width: 100vw;
+    height:100vh;
     padding-top: 20vh;
     display: flex;
     flex-wrap: wrap;
@@ -243,7 +244,6 @@
       align-items: center;
       text-align: justify;
       text-justify:auto;
-      opacity:0.95;
   } 
   
   .skills-portrait{
