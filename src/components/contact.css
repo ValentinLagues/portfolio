@@ -306,3 +306,26 @@ a {
       text-align: center;
   }
 }
+
+@media screen and (max-height: 415px) {
+  #contact {
+    height: 160vh;
+  }
+
+  .contact-hypercan {
+    margin-top: 30px;
+    line-height: 4vh;
+      font-family: SOR2;
+      color: white;
+      font-size: 8px;
+      text-align: center;
+  }
+
+  .contact-copyright {
+    margin-top: 15px;
+      font-family: SOR2;
+      color: white;
+      font-size: 7px;
+      text-align: center;
+  }
+}

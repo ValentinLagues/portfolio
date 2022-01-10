@@ -20,13 +20,13 @@ const Contact = ({ french, select, blue }) => {
           <img className="contact-img-sonic" src={sonic} alt="sonic" />
           <p className="contact-contract">
             {french
-              ? "JE SUIS ACTUELLEMENT A LA RECHERCHE D'UNE ENTREPRISE SUSCEPTIBLE DE M'ACCUEILLIR POUR UNE ALTERNANCE D'UN AN EN FORMATION DE DEVELOPPEUR WEB AVANCE (REACT, REACT NATIVE) A PARTIR DU MOIS DE MARS 2022"
-              : "I AM CURRENTLY LOOKING FOR A WEB DEVELOPER WORK-STUDY CONTRACT (REACT, REACT NATIVE) FROM MARCH 2022 AND FOR A PERIOD OF ONE YEAR."}
+              ? "JE SUIS ACTUELLEMENT A LA RECHERCHE D'UNE ENTREPRISE SUSCEPTIBLE DE M'ACCUEILLIR POUR UNE ALTERNANCE D'UN AN EN FORMATION DE DEVELOPPEUR WEB AVANCE (REACT, REACT NATIVE) A PARTIR DU 7 MARS 2022 JUSQU'AU 6 MARS 2023."
+              : "I AM CURRENTLY LOOKING FOR A WEB DEVELOPER WORK-STUDY CONTRACT (REACT, REACT NATIVE) FROM MARCH 7TH, 2022 TO MARCH 6TH, 2023 (ONE YEAR)."}
           </p>
           <p className="contact-paragraph">
             {french
-              ? "MON PROFIL VOUS INTERESSE ? N'HESITEZ PAS A ME CONTACTER, JE VOUS ATTENDS AVEC IMPATIENCE !"
-              : "INTERESTED IN MY PROFILE ? DON'T HESITATE TO CONTACT ME, I AM WAITING FOR YOU !"}
+              ? "MON PROFIL VOUS INTERESSE ? N'HESITEZ PAS A ME CONTACTER !"
+              : "INTERESTED IN MY PROFILE ? DON'T HESITATE TO CONTACT ME !"}
           </p>
           <ul className="contact-logos-list">
             <li>
@@ -99,8 +99,8 @@ const Contact = ({ french, select, blue }) => {
             <div className="hypercan-container">
               <p className="contact-hypercan">
                 * J'AIMERAIS REMERCIER LE GROUPE HYPERCAN DE M'AVOIR DONNE
-                L'AUTORISATION
-                <br /> D'UTILISER LA MUSIQUE DE LEUR ALBUM 'STELLAR ECHOES'.
+                L'AUTORISATION D'UTILISER LA MUSIQUE DE LEUR ALBUM 'STELLAR
+                ECHOES'.
                 <br />
                 DECOUVREZ-LES SUR{" "}
                 <a

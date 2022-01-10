@@ -322,3 +322,37 @@
       font-size: 10px;
   }
 }
+
+@media screen and (max-height: 415px) {
+  #skills {
+    height: 150vh;
+  }
+
+  .skills-computer {
+    margin-left:1.5em;
+    width:140px;
+    height:180px;
+  }
+
+  .skills-coins {
+    margin-left: 4em;
+    list-style: none;
+    text-align: right;
+    line-height: 15px;
+  }
+
+  .skills-paragraph {
+    margin-left: 1.5em;
+    line-height: 15px;
+    margin-right: 1.5em;
+    list-style: none;
+      font-family: SOR2;
+      color: white;
+      font-size: 10px;
+  }
+
+  .coin{
+    width: 10px;
+    height: 10px;
+  }
+}

@@ -357,3 +357,9 @@
       font-size: 3vw;
   }
 }
+
+@media screen and (max-height: 415px) {
+  #projects {
+    height: 150vh;
+  }
+}
