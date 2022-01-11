@@ -210,7 +210,7 @@
     z-index: 1;
     padding-top: 7px;
     padding-bottom: 7px;
-    height: 20vh;
+    height: 22vh;
       font-family: SOR;
       color: white;
       font-size: 9vw;
@@ -229,14 +229,14 @@
     z-index: 1;
     padding-top: 7px;
     padding-bottom: 7px;
-    height: 20vh;
+    height: 21vh;
       font-family: SOR;
       color: white;
       font-size: 9vw;
       line-height: 35px;
       background-color: black;
       display:flex;
-      flex-direction: column;
+      flex-direction:column;
       justify-content: space-around;
       align-items: center;
       position: fixed;

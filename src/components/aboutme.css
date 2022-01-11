@@ -124,6 +124,7 @@ line-height: 3vh;
 @media screen and (max-width: 600px) {
   #aboutme {
     width:100vw;
+    height:130vh;
    padding-top: 20vh;
    display: flex;
    flex-wrap: wrap;
@@ -161,15 +162,20 @@ line-height: 3vh;
  }
  
  .about-container {
-   margin-top: 1em;
-   padding: 1.5em;
-   width: 75vw;
-     background-color: black;
-     border-style: solid;
-     color:white;
-     border-width: 5px 2px;
-     justify-content: center;
-     align-content: center;
+  border-style:solid;
+  border-width: 5px 2px;
+  color: white; 
+  margin: 1em;
+  padding: 1.5em;
+    width: 75vw;
+    background-color: black;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: justify;
+    text-justify:auto;;
  }
  
  .about-img {

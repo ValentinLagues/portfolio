@@ -54,7 +54,7 @@
 
 #contact {
   width:99vw;
-height:93.5vh;
+height:94.5vh;
 padding-top: 3%;
 display: flex;
 flex-wrap: wrap;
@@ -197,6 +197,7 @@ a {
 @media screen and (max-width: 600px) {
   #contact {
     width:100vw;
+    height:100vh;
   padding-top: 20vh;
   display: flex;
   flex-wrap: wrap;
@@ -286,7 +287,7 @@ a {
 
   .contact-hypercan {
     margin-top: 30px;
-    line-height: 1.5vh;
+    line-height: 1.7vh;
       font-family: SOR2;
       color: white;
       font-size: 1.8vw;
