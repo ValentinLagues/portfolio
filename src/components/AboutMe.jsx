@@ -1,8 +1,11 @@
 import { Link } from "react-scroll";
 import hacker from "../assets/hacker1.gif";
 import "./aboutme.css";
+import SettingContext from "../context/SettingContext";
+import { useContext } from "react";
 
-const AboutMe = ({ french, select, blue }) => {
+const AboutMe = () => {
+  const { blue, french, select } = useContext(SettingContext);
   return (
     <div id="aboutme">
       <div>

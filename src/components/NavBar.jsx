@@ -1,9 +1,11 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { Link } from "react-scroll";
 import "./navbar.css";
+import SettingContext from "../context/SettingContext";
 
-const NavBar = ({ french, select, blue }) => {
+const NavBar = () => {
   const [scroll, setScroll] = useState(false);
+  const { blue, french, select } = useContext(SettingContext);
   useEffect(() => {
     window.addEventListener("scroll", () => {
       setScroll(window.scrollY > 100);

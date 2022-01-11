@@ -3,10 +3,12 @@ import portrait from "../assets/pink.png";
 import portraitblue from "../assets/blue.png";
 import computer from "../assets/computer.gif";
 import coin from "../assets/coin.gif";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import SettingContext from "../context/SettingContext";
 
-const Skills = ({ french, select, blue }) => {
+const Skills = () => {
   const [selected, setSelected] = useState(false);
+  const { blue, french, select } = useContext(SettingContext);
   return (
     <div id="skills">
       <div>
