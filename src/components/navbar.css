@@ -321,3 +321,13 @@
         animation: flickerblue 3s infinite alternate;
   }
 }
+
+@media screen and (max-height: 415px) {
+  .navbar {
+    width: 100vw;
+  }
+
+  .navbar-scroll{
+    width: 100vw;
+  }
+}

@@ -198,3 +198,9 @@ line-height: 3vh;
    color:blue;
  }
 }
+
+@media screen and (max-height: 415px) {
+  #aboutme {
+    height: 110vh;
+  }
+}

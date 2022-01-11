@@ -165,8 +165,8 @@ line-height: 2.8vh;
 }
 
 .contact-img-jack {
-  width: 16em;
-  height: 8em;
+  width: 14em;
+  height: 7em;
 }
 
 .contact-hypercan {
@@ -184,11 +184,10 @@ a {
 }
 
 .contact-copyright {
-  margin-top: 25px;
-  line-height: 1.5vh;
+  margin-top: 15px;
     font-family: SOR2;
     color: white;
-    font-size: 0.4vw;
+    font-size: 0.5vw;
     text-align: center;
 }
 
@@ -301,10 +300,32 @@ a {
   
   .contact-copyright {
     margin-top: 15px;
-    line-height: 1.5vh;
       font-family: SOR2;
       color: white;
       font-size: 1.5vw;
+      text-align: center;
+  }
+}
+
+@media screen and (max-height: 415px) {
+  #contact {
+    height: 160vh;
+  }
+
+  .contact-hypercan {
+    margin-top: 30px;
+    line-height: 4vh;
+      font-family: SOR2;
+      color: white;
+      font-size: 8px;
+      text-align: center;
+  }
+
+  .contact-copyright {
+    margin-top: 15px;
+      font-family: SOR2;
+      color: white;
+      font-size: 7px;
       text-align: center;
   }
 }

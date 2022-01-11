@@ -201,7 +201,6 @@
     align-items: center;
     text-align: justify;
     text-justify:auto;
-    opacity:0.95;
   } 
 
 .settings-list{
@@ -453,3 +452,10 @@
     text-align: center;
   }
   }
+
+  @media screen and (max-height: 415px) {
+    #home {
+      height: 100vh;
+    }
+  }
+  
