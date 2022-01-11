@@ -1,12 +1,13 @@
 import ReactPlayer from "react-player";
 import playlist from "../music";
-import { useMemo } from "react";
+import MusicContext from "../context/MusicContext";
+import { useContext } from "react";
 
-const Music = ({ musicPlayer }) => {
-  const musicComponent = useMemo(() => musicPlayer, [musicPlayer]);
+const Music = () => {
+  const { musicPlayer } = useContext(MusicContext);
   return (
     <div className="music-component">
-      {musicComponent && (
+      {musicPlayer && (
         <ReactPlayer
           url={playlist[Math.round(Math.random() * 5)].src}
           controls

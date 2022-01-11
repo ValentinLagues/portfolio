@@ -1,17 +1,19 @@
 import "./contact.css";
 import useSound from "use-sound";
 import jacklaugh from "../mp3/jacklaugh.wav";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import sonic from "../assets/sonic.gif";
 import mail from "../assets/mail.png";
 import linkedin from "../assets/linkedin.png";
 import github from "../assets/github.png";
 import cv from "../docs/Valentin_lagues.pdf";
 import jack from "../assets/jackSOR.gif";
+import SettingContext from "../context/SettingContext";
 
-const Contact = ({ french, select, blue }) => {
+const Contact = () => {
   const [laugh] = useSound(jacklaugh);
   const [downloaded, setDownloaded] = useState(false);
+  const { blue, french, select } = useContext(SettingContext);
   return (
     <div id="contact">
       <div>

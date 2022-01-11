@@ -1,11 +1,13 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import heroes from "../assets/wildheroes.png";
 import olentzero from "../assets/olentzero.png";
 import "./projects.css";
+import SettingContext from "../context/SettingContext";
 
-const Projects = ({ french, select, blue }) => {
+const Projects = () => {
   const [selectedProject1, setSelectedProject1] = useState(false);
   const [selectedProject2, setSelectedProject2] = useState(false);
+  const { blue, french, select } = useContext(SettingContext);
   return (
     <div id="projects">
       <div>

@@ -1,19 +1,16 @@
 import useSound from "use-sound";
 import soundoption from "../mp3/option-sound2.wav";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import "./home.css";
+import SettingContext from "../context/SettingContext";
+import MusicContext from "../context/MusicContext";
 
-const Home = ({
-  french,
-  setFrench,
-  musicPlayer,
-  setMusicPlayer,
-  select,
-  blue,
-  setBlue,
-}) => {
+const Home = ({ changeBackground }) => {
   const [option] = useSound(soundoption);
   const [start, setStart] = useState(false);
+  const { musicPlayer, setMusicPlayer } = useContext(MusicContext);
+  const { blue, setBlue, french, setFrench, select } =
+    useContext(SettingContext);
   return (
     <div id="home">
       <div className="home-title">
@@ -62,6 +59,7 @@ const Home = ({
                     onClick={() => {
                       setBlue(!blue);
                       option();
+                      changeBackground();
                     }}
                   >
                     {blue && french
