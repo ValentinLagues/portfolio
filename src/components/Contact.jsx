@@ -101,7 +101,9 @@ const Contact = () => {
             <div className="hypercan-container">
               <p className="contact-hypercan">
                 * J'AIMERAIS REMERCIER HYPERCAN DE M'AVOIR DONNE L'AUTORISATION
-                D'UTILISER LA MUSIQUE DE LEUR ALBUM 'STELLAR ECHOES'.
+                D'UTILISER LA MUSIQUE
+                <br />
+                DE LEURS ALBUMS 'STELLAR ECHOES' ET "SYNTHS OF RAGE".
                 <br />
                 DECOUVREZ-LES SUR{" "}
                 <a
@@ -134,7 +136,10 @@ const Contact = () => {
             <div className="hypercan-container">
               <p className="contact-hypercan">
                 * I WOULD LIKE TO THANK HYPERCAN WHO GAVE ME THE AUTHORIZATION
-                <br /> OF USING THE MUSIC FROM THEIR ALBUM 'STELLAR ECHOES'.
+                OF USING
+                <br />
+                THE MUSIC FROM THEIR ALBUMS 'STELLAR ECHOES' AND 'SYNTHS OF
+                RAGE'.
                 <br />
                 GO DISCOVER THEM ON{" "}
                 <a

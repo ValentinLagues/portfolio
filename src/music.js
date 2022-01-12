@@ -4,6 +4,7 @@ import track3 from "./mp3/TheConspiracy.mp3";
 import track4 from "./mp3/UnderTheFoam.mp3";
 import track5 from "./mp3/NineteenNightyKnights.mp3";
 import track6 from "./mp3/LunarAshes.mp3";
+import track7 from "./mp3/MoonBeach.mp3";
 
 const playlist = [
   {
@@ -29,6 +30,10 @@ const playlist = [
   {
     title: "Lunar ashes",
     src: track6,
+  },
+  {
+    title: "Moon beach",
+    src: track7,
   },
 ];
 export default playlist;

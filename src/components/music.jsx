@@ -9,7 +9,7 @@ const Music = () => {
     <div className="music-component">
       {musicPlayer && (
         <ReactPlayer
-          url={playlist[Math.round(Math.random() * 5)].src}
+          url={playlist[Math.round(Math.random() * 6)].src}
           width="0"
           height="0"
           playing={true}
