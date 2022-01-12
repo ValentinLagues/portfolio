@@ -111,6 +111,14 @@ const Contact = () => {
                   rel="noreferrer"
                 >
                   BANDCAMP
+                </a>
+                ,{" "}
+                <a
+                  href="https://soundcloud.com/hypercan"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  SOUNDCLOUD
                 </a>{" "}
                 ET{" "}
                 <a
@@ -136,6 +144,14 @@ const Contact = () => {
                   rel="noreferrer"
                 >
                   BANDCAMP
+                </a>
+                ,{" "}
+                <a
+                  href="https://soundcloud.com/hypercan"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  SOUNDCLOUD
                 </a>{" "}
                 AND{" "}
                 <a

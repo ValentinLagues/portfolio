@@ -84,12 +84,14 @@ const Skills = () => {
                   </li>
                   <li>
                     <img className="coin" src={coin} alt="coin" />
+                    <img className="coin" src={coin} alt="coin" />
                   </li>
                   <li>
                     <img className="coin" src={coin} alt="coin" />
                     <img className="coin" src={coin} alt="coin" />
                   </li>
                   <li>
+                    <img className="coin" src={coin} alt="coin" />
                     <img className="coin" src={coin} alt="coin" />
                     <img className="coin" src={coin} alt="coin" />
                   </li>

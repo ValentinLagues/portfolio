@@ -12,11 +12,11 @@ import { SettingContextProvider } from "./context/SettingContext";
 
 function App() {
   const changeBackground = () => {
-    document.getElementById("main").classList.toggle("blue");
+    document.getElementById("app").classList.toggle("blue");
   };
   return (
     <SettingContextProvider>
-      <div id="main" className="App">
+      <div id="app" className="App">
         <NavBar />
         <MusicContextProvider>
           <Home changeBackground={changeBackground} />
