@@ -3,6 +3,11 @@
     src: local('SOR'), url('../font/SOR2.ttf');
   }
 
+  @font-face {
+    font-family: 'RR';
+    src: local('RR'), url('../font/Road_Rage.otf');
+  }
+
   @keyframes slideIn {
     0% {
       transform: translate(0, -50vw);
@@ -97,9 +102,9 @@
   list-style: none;
   z-index: 1000;
   height: 10vh;
-    font-family: SOR;
+    font-family: RR;
     color: white;
-    font-size: 4vw;
+    font-size: 3vw;
     animation-name: FadeIn;
     animation-duration: 5s;
     transition-timing-function: linear;
@@ -115,9 +120,9 @@
   list-style: none;
   z-index: 1;
   height: 10vh;
-    font-family: SOR;
+    font-family: RR;
     color: white;
-    font-size: 4vw;
+    font-size: 3vw;
     background-color: black;
     display:flex;
     justify-content: space-around;
@@ -211,9 +216,9 @@
     padding-top: 7px;
     padding-bottom: 7px;
     height: 22vh;
-      font-family: SOR;
+      font-family: RR;
       color: white;
-      font-size: 9vw;
+      font-size: 7vw;
       line-height: 35px;
       background-color: black;
       display:flex;
@@ -230,9 +235,9 @@
     padding-top: 7px;
     padding-bottom: 7px;
     height: 21vh;
-      font-family: SOR;
+      font-family: RR;
       color: white;
-      font-size: 9vw;
+      font-size: 7vw;
       line-height: 35px;
       background-color: black;
       display:flex;

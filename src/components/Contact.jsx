@@ -100,9 +100,8 @@ const Contact = () => {
           {french ? (
             <div className="hypercan-container">
               <p className="contact-hypercan">
-                * J'AIMERAIS REMERCIER LE GROUPE HYPERCAN DE M'AVOIR DONNE
-                L'AUTORISATION D'UTILISER LA MUSIQUE DE LEUR ALBUM 'STELLAR
-                ECHOES'.
+                * J'AIMERAIS REMERCIER HYPERCAN DE M'AVOIR DONNE L'AUTORISATION
+                D'UTILISER LA MUSIQUE DE LEUR ALBUM 'STELLAR ECHOES'.
                 <br />
                 DECOUVREZ-LES SUR{" "}
                 <a

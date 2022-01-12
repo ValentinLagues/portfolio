@@ -8,6 +8,11 @@
   src: local ('SOR2'), url('../font/SOR2-2.ttf');
 }
 
+@font-face {
+  font-family: 'RR';
+  src: local('RR'), url('../font/Road_Rage.otf');
+}
+
   @keyframes fadeIn {
     0% {
       opacity: 0;
@@ -106,7 +111,6 @@
 
 .home-title {
   color:white;
-    font-family: SOR;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -114,6 +118,7 @@
     }
 
 .home-name {
+  font-family: RR;
   margin-top: 15px;
   margin-bottom: 15px;
     font-size: 8vw;
@@ -127,6 +132,7 @@
 }
 
 .home-name-blue {
+  font-family: RR;
   margin-top: 15px;
   margin-bottom: 15px;
     font-size: 8vw;
@@ -287,15 +293,16 @@
   
   .home-title {
     color:white;
-      font-family: SOR;
       display: flex;
       justify-content: center;
       flex-direction: column;
       align-items: center;
+      line-height: 70px;
       }
   
   .home-name {
-      font-size: 70px;
+      font-size: 60px;
+      margin-bottom: 5px;
       text-shadow:
         0 0 7px #fff,
         0 0 10px #fff,
@@ -317,9 +324,9 @@
   }
   
   .home-developer {
-      margin-top: 15px;
+      margin-top: 5px;
       margin-bottom: 15px;
-      font-size: 50px;
+      font-size: 35px;
       text-shadow:
         0 0 7px #fff,
         0 0 10px #fff,
@@ -330,9 +337,9 @@
   }
   
   .home-developer-blue {
-    margin-top: 15px;
+    margin-top: 5px;
     margin-bottom: 15px;
-    font-size: 50px;
+    font-size: 35px;
     text-shadow:
       0 0 7px #fff,
       0 0 10px #fff,
@@ -346,11 +353,11 @@
     display:flex;
     flex-wrap: wrap;
     cursor: pointer;
-    margin-top: 2em;
+    margin-top: 1em;
     font-family: SOR2;
     color: white;
     line-height: 30px;
-    font-size: 20px;
+    font-size: 15px;
     animation-duration: 1s;
     animation-name: flash;
     animation-iteration-count: infinite;
@@ -385,6 +392,7 @@
   .settings-list{
     display: flex;
     flex-direction: column;
+    line-height: 20px;
   }
   
   .settings-card{
