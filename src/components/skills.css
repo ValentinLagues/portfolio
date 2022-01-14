@@ -195,7 +195,7 @@
 
 .coin{
   width: 18px;
-  height:18px;
+  height: 18px;
 }
 
 @media screen and (max-width: 600px) {
@@ -289,7 +289,10 @@
   .skills-name {
     margin-top: 15px;
       font-family: SOR2;
-      color: white;
+      background:-webkit-linear-gradient(top, rgb(248, 223, 182) 10%, rgb(215, 164, 72) 20%, rgb(227, 219, 14) 30%, rgb(239, 224, 201) 50%, rgb(101, 31, 21) 55%, rgb(93, 9, 0) 60%, rgb(173, 90, 0) 70%, rgb(203, 143, 31) 75%, rgb(216, 167, 49) 80%, rgb(227, 205, 104) 85%, rgb(233, 244, 201) 100%);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
       font-size: 4vw;
       text-align: center;
   }
