@@ -123,7 +123,7 @@
   height:12em;
   border-style: solid;
   border-width: 5px 2px;
-  color: goldenrod;
+  color: rgb(218, 165, 32);
   cursor: pointer;
   filter:brightness(120%);
 }
@@ -179,18 +179,38 @@
 }
 
 .skills-coins {
-  margin-left: 4em;
-  list-style: none;
-  text-align: right;
-}
-
-.skills-paragraph {
+  text-align: left;
   margin-left: 1.5em;
   line-height: 2.8vh;
   list-style: none;
     font-family: SOR2;
     color: white;
     font-size: 1vw;
+}
+
+.skills-paragraph {
+  text-align: left;
+  margin-left: 1.5em;
+  line-height: 2.8vh;
+  list-style: none;
+    color: white;
+}
+
+.skills-skill {
+  font-family: SOR2;
+  font-size: 1vw;
+}
+
+.skills-stars {
+  text-shadow:
+        0 0 7px rgb(218, 165, 32),
+        0 0 10px rgb(218, 165, 32),
+        0 0 42px rgb(218, 165, 32),
+        0 0 77px rgb(218, 165, 32),
+        0 0 100px rgb(218, 165, 32);
+      animation: flash 1s infinite linear;
+  font-family: SOR;
+  font-size: 1.8vw;
 }
 
 .coin{
