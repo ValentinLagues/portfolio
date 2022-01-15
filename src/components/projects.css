@@ -224,7 +224,7 @@
       font-family: SOR;
       color: white;
       width: 100%;
-        margin-top: 3vh;
+        margin-top: 3.5vh;
         font-size: 12vw;
         text-shadow:
           0 0 7px #fff,
@@ -239,7 +239,7 @@
     font-family: SOR;
     color: white;
     width: 100%;
-      margin-top: 3vh;
+      margin-top: 3.5vh;
       font-size: 12vw;
       text-shadow:
         0 0 7px #fff,
@@ -270,13 +270,10 @@
   .projects-select {
     margin-top: 15px;
   font-family: SOR2;
-  background:-webkit-linear-gradient(top, rgb(107, 102, 168) 10%, rgb(167, 160, 211) 30%, rgb(217, 218, 223) 70%, rgb(167, 160, 211) 90%, rgb(107, 102, 168) 100%);
-    background-clip:text;
-    -webkit-background-clip:text;
-    color:transparent;
-  font-size: 4vw;
+  color: white;
+  font-size: 5vw;
   text-align: center;
-  line-height: 3vh;
+  line-height: 20px;
   animation-duration: 1s;
   animation-name: flash;
   animation-iteration-count: infinite;
