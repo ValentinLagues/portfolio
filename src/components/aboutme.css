@@ -124,7 +124,7 @@ line-height: 3vh;
 @media screen and (max-width: 600px) {
   #aboutme {
     width:100vw;
-    height:130vh;
+    height:110vh;
    padding-top: 20vh;
    display: flex;
    flex-wrap: wrap;

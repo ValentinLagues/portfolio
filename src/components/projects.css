@@ -213,7 +213,7 @@
 @media screen and (max-width: 600px) {
   #projects {
     width: 100vw;
-    height: 200vh;
+    height: 170vh;
     padding-top: 20vh;
     display: flex;
     flex-wrap: wrap;
