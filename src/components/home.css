@@ -368,7 +368,7 @@
     padding-bottom: 1.5em;
     font-family: SOR2;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
   }
   
@@ -417,13 +417,13 @@
   .settings-select{
     padding-bottom: 1em;
     font-family: SOR2;
-    font-size:15px;
+    font-size:12px;
   }
   
   .settings-choice{
     font-family: SOR2;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 10px;
     margin-bottom: 2em;
   }
   
@@ -431,7 +431,7 @@
     font-family: SOR2;
     color:rgb(18, 188, 230);
     cursor: pointer;
-    font-size: 12px;
+    font-size: 10px;
     margin-bottom: 2em;
   }
   
@@ -439,7 +439,7 @@
     font-family: SOR2;
     color:rgb(230, 18, 124);
     cursor: pointer;
-    font-size: 12px;
+    font-size: 10px;
     margin-bottom: 2em;
   }
   
@@ -447,7 +447,7 @@
     font-family: SOR2;
     color: goldenrod;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 10px;
     margin-bottom: 2em;
   }
   
@@ -456,7 +456,7 @@
     margin-top: 1em;
     font-family: SOR2;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
   }
   }

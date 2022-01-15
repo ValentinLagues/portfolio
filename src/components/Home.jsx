@@ -16,7 +16,7 @@ const Home = ({ changeBackground }) => {
       <div className="home-title">
         <p className={blue ? "home-name-blue" : "home-name"}>VALENTIN LAGUES</p>
         <p className={blue ? "home-developer-blue" : "home-developer"}>
-          {french ? "DEVELOPPEUR WEB" : "* WEB DEVELOPER *"}
+          {french ? "* DEVELOPPEUR WEB *" : "* WEB DEVELOPER *"}
         </p>
         {!start && (
           <p
