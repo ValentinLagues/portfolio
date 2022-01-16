@@ -79,13 +79,13 @@ const Skills = () => {
                     <span className="skills-stars">**&nbsp;</span> EXPRESS.JS
                   </p>
                   <p className="skills-skill">
+                    <p className="skills-skill">
+                      <span className="skills-stars">***&nbsp;</span> POSTMAN
+                    </p>
                     <span className="skills-stars">***&nbsp;</span> GITHUB
                   </p>
                   <p className="skills-skill">
                     <span className="skills-stars">***&nbsp;</span> SCRUM,TRELLO
-                  </p>
-                  <p className="skills-skill">
-                    <span className="skills-stars">***&nbsp;</span> POSTMAN
                   </p>
                 </div>
               </div>
