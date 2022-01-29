@@ -54,13 +54,13 @@ const Skills = () => {
                     <span className="skills-stars">***&nbsp;</span> CSS
                   </p>
                   <p className="skills-skill">
-                    <span className="skills-stars">*&nbsp;</span> SCSS
+                    <span className="skills-stars">**&nbsp;</span> SCSS
                   </p>
                   <p className="skills-skill">
                     <span className="skills-stars">**&nbsp;</span> JAVASCRIPT
                   </p>
                   <p className="skills-skill">
-                    <span className="skills-stars">*&nbsp;</span> TYPESCRIPT
+                    <span className="skills-stars">**&nbsp;</span> TYPESCRIPT
                   </p>
                   <p className="skills-skill">
                     <span className="skills-stars">**&nbsp;</span> REACT
