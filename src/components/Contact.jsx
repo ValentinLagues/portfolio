@@ -6,7 +6,7 @@ import sonic from "../assets/sonic.gif";
 import mail from "../assets/mail.png";
 import linkedin from "../assets/linkedin.png";
 import github from "../assets/github.png";
-import cv from "../docs/Valentin_lagues.pdf";
+import cv from "../docs/CV_Valentin_Lagues.pdf";
 import jack from "../assets/jackSOR.gif";
 import SettingContext from "../context/SettingContext";
 
