@@ -76,7 +76,7 @@ const Skills = () => {
                     <span className="skills-stars">*&nbsp;</span> NODE.JS
                   </p>
                   <p className="skills-skill">
-                    <span className="skills-stars">**&nbsp;</span> EXPRESS.JS
+                    <span className="skills-stars">*&nbsp;</span> EXPRESS.JS
                   </p>
                   <p className="skills-skill">
                     <p className="skills-skill">
