@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.c985058f.chunk.css",
-    "main.js": "/portfolio/static/js/main.36277b34.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.36277b34.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.13df89ec.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.13df89ec.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.3eec3a2a.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.3eec3a2a.js.map",
     "static/js/2.ca0edee4.chunk.js": "/portfolio/static/js/2.ca0edee4.chunk.js",
@@ -15,6 +15,7 @@
     "static/css/main.c985058f.chunk.css.map": "/portfolio/static/css/main.c985058f.chunk.css.map",
     "static/js/2.ca0edee4.chunk.js.LICENSE.txt": "/portfolio/static/js/2.ca0edee4.chunk.js.LICENSE.txt",
     "static/js/3.fa80d7f5.chunk.js.LICENSE.txt": "/portfolio/static/js/3.fa80d7f5.chunk.js.LICENSE.txt",
+    "static/media/CV_Valentin_Lagues.fcd8ef8e.pdf": "/portfolio/static/media/CV_Valentin_Lagues.fcd8ef8e.pdf",
     "static/media/DroidSplash.eb9d6bfa.mp3": "/portfolio/static/media/DroidSplash.eb9d6bfa.mp3",
     "static/media/LunarAshes.fed6451b.mp3": "/portfolio/static/media/LunarAshes.fed6451b.mp3",
     "static/media/MoonBeach.ddeb5322.mp3": "/portfolio/static/media/MoonBeach.ddeb5322.mp3",
@@ -24,7 +25,6 @@
     "static/media/TheConspiracy.e5a7e7a9.mp3": "/portfolio/static/media/TheConspiracy.e5a7e7a9.mp3",
     "static/media/TheFallOfVegetaliandra.02c9afe4.mp3": "/portfolio/static/media/TheFallOfVegetaliandra.02c9afe4.mp3",
     "static/media/UnderTheFoam.86fa3190.mp3": "/portfolio/static/media/UnderTheFoam.86fa3190.mp3",
-    "static/media/Valentin_lagues.f555d264.pdf": "/portfolio/static/media/Valentin_lagues.f555d264.pdf",
     "static/media/blue.3a917587.png": "/portfolio/static/media/blue.3a917587.png",
     "static/media/app.css": "/portfolio/static/media/street.e19f74a6.gif",
     "static/media/computer.5541ad94.gif": "/portfolio/static/media/computer.5541ad94.gif",
@@ -42,6 +42,6 @@
     "static/js/runtime-main.3eec3a2a.js",
     "static/js/2.ca0edee4.chunk.js",
     "static/css/main.c985058f.chunk.css",
-    "static/js/main.36277b34.chunk.js"
+    "static/js/main.13df89ec.chunk.js"
   ]
 }
