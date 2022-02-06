@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.c985058f.chunk.css",
-    "main.js": "/portfolio/static/js/main.b1b51892.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.b1b51892.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.feabd2d6.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.feabd2d6.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.3eec3a2a.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.3eec3a2a.js.map",
     "static/js/2.ca0edee4.chunk.js": "/portfolio/static/js/2.ca0edee4.chunk.js",
@@ -15,7 +15,7 @@
     "static/css/main.c985058f.chunk.css.map": "/portfolio/static/css/main.c985058f.chunk.css.map",
     "static/js/2.ca0edee4.chunk.js.LICENSE.txt": "/portfolio/static/js/2.ca0edee4.chunk.js.LICENSE.txt",
     "static/js/3.fa80d7f5.chunk.js.LICENSE.txt": "/portfolio/static/js/3.fa80d7f5.chunk.js.LICENSE.txt",
-    "static/media/CV_Valentin_Lagues.fcd8ef8e.pdf": "/portfolio/static/media/CV_Valentin_Lagues.fcd8ef8e.pdf",
+    "static/media/CV_Valentin_Lagues.01cf7989.pdf": "/portfolio/static/media/CV_Valentin_Lagues.01cf7989.pdf",
     "static/media/DroidSplash.eb9d6bfa.mp3": "/portfolio/static/media/DroidSplash.eb9d6bfa.mp3",
     "static/media/LunarAshes.fed6451b.mp3": "/portfolio/static/media/LunarAshes.fed6451b.mp3",
     "static/media/MoonBeach.ddeb5322.mp3": "/portfolio/static/media/MoonBeach.ddeb5322.mp3",
@@ -42,6 +42,6 @@
     "static/js/runtime-main.3eec3a2a.js",
     "static/js/2.ca0edee4.chunk.js",
     "static/css/main.c985058f.chunk.css",
-    "static/js/main.b1b51892.chunk.js"
+    "static/js/main.feabd2d6.chunk.js"
   ]
 }
